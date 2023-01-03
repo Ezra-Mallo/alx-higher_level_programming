@@ -11,4 +11,3 @@ for xter in range(122, 96, -1):
         print("{}".format(chr(xter)), end="")
     else:
         print("{}".format(chr(xter - 32)), end="")
-
