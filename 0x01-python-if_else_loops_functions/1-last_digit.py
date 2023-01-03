@@ -14,7 +14,7 @@ if number < 0:
     elif digit == 0:
         print(f"Last digit of {number} is 0 and is 0")
     elif digit < 6 and digit != 0:
-i        print(f"Last digit of {number} is {digit}", \
+        print(f"Last digit of {number} is {digit} ", \
                 "and is less than 6 and not 0")
 elif number > 0:
     digit = number % 10
@@ -23,7 +23,7 @@ elif number > 0:
     elif digit == 0:
         print(f"Last digit of {number} is 0 and is 0")
     elif digit < 6 and digit != 0:
-        print(f"Last digit of {number} is {digit}" , \
+        print(f"Last digit of {number} is {digit} " , \
                 "and is less than 6 and not 0")
 elif number == 0:
     print(f"Last digit of {number} is 0 and is 0")
