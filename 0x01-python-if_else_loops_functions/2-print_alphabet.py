@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-import sys
-for xter in  range(97, 122):
-    sys.stderr.write(chr(xter))
+for xter in  range(97, 123):
+    print(chr(xter), end ='')
