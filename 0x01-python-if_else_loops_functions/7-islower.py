@@ -1,8 +1,12 @@
 #!/usr/bin/python3
 
+# 7-islower.py
+# ezra.mallo@gmail.com
 
-for num in range(100):
-    if num != 99:
-        print("{:02d},".format(num), end=" ")
+def islower(c):
+    """Function that checks for lowercase character."""
+
+    if ord(c) >= 97 and ord(c) <= 122:
+        return True
     else:
-        print("{:02d}".format(num))
+        return False
