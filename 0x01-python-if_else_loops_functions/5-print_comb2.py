@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""Prints numbers from 0 to 99."""
 
 # 5-print_comb2.py
 # ezra.mallo@gmail.comi

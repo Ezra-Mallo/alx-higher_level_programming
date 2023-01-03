@@ -5,4 +5,4 @@
 # ezra.mallo@gmail.com
 
 for num in range(99):
-    print("{:02d} = {:#02x}".format(num, num))
+    print("{:d} = {:#02x}".format(num, num))
