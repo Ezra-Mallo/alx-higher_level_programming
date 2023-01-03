@@ -17,4 +17,3 @@ def uppercase(str):
             new_str =  new_str + chr(asci)
 
     print("{}".format(new_str))
-
