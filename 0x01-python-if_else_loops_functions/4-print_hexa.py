@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-for num in  range(99):
+"""Prints the ASCII alphabet, in lowercase, not followed by a new line."""
+
+for num in range(99):
     print(f"{num:02d}  =  {num:#02x}")
