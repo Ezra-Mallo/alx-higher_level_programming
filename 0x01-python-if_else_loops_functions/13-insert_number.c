@@ -8,19 +8,19 @@
  *
  * Return: returns the listing
  */
-
 listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *newNode, *copy = *head, *copy2 = *head;
 	int num, i, index = 0;
+	
+	if (head == NULL)
+		return (NULL);
 
 	newNode = malloc(sizeof(listint_t));
-
 	if (newNode == NULL)
 		return (NULL);
 
 	newNode->n = number;
-
 	/*get the index */
 	while (copy->next != NULL)
 	{
@@ -28,11 +28,14 @@ listint_t *insert_node(listint_t **head, int number)
 		if (num < number)
 			copy = copy->next;
 		else
+		{
+			index = index - 1;
 			break;
+		}
 		index++;
 	}
 	/* point to the correct = index - 1 */
-	for ( i = 0; i < (index - 1); i++)
+	for (i = 0; i < (index); i++)
 	{
 		if (copy2 == NULL || copy2->next == NULL)
 			return (NULL);
@@ -47,8 +50,6 @@ listint_t *insert_node(listint_t **head, int number)
 		*head = newNode;
 		return (newNode);
 	}
-
-
 
 	newNode->next = copy2->next;
 	copy2->next = newNode;
