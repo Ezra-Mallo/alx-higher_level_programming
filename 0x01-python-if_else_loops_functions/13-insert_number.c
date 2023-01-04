@@ -28,14 +28,11 @@ listint_t *insert_node(listint_t **head, int number)
 		if (num < number)
 			copy = copy->next;
 		else
-		{
-			index = index - 1;
 			break;
-		}
 		index++;
 	}
 	/* point to the correct = index - 1 */
-	for (i = 0; i < (index); i++)
+	for (i = 0; i < (index - 1); i++)
 	{
 		if (copy2 == NULL || copy2->next == NULL)
 			return (NULL);
