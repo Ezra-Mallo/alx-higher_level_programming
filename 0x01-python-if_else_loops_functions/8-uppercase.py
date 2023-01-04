@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
+
 # 8-uppercase.py
 # ezra.mallo@gmail.com
 
 def uppercase(str):
     """Function that checks for uppercase character."""
+
     new_str = ""
     lenght = len(str)
 

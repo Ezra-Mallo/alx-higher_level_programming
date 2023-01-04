@@ -12,14 +12,13 @@ listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *newNode, *copy = *head, *copy2 = *head;
 	int num, i, index = 0;
-	
+
 	if (head == NULL)
 		return (NULL);
 
 	newNode = malloc(sizeof(listint_t));
 	if (newNode == NULL)
 		return (NULL);
-
 	newNode->n = number;
 	/*get the index */
 	while (copy->next != NULL)
@@ -39,7 +38,6 @@ listint_t *insert_node(listint_t **head, int number)
 
 		copy2 = copy2->next;
 	}
-
 	/* perform this if this is the only record*/
 	if (index == 0)
 	{
@@ -47,9 +45,7 @@ listint_t *insert_node(listint_t **head, int number)
 		*head = newNode;
 		return (newNode);
 	}
-
 	newNode->next = copy2->next;
 	copy2->next = newNode;
-
 	return (newNode);
 }
