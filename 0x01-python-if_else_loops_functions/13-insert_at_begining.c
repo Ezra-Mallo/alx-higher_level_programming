@@ -43,13 +43,13 @@ listint_t *insert_node(listint_t **head, int number)
 
 	if (i == 0)
 	{
-		newNode->next = copy;
-		*head = newNode;
-		return (newNode);
+		new_node->next = copy;
+		*head = new_node;
+		return (new_node);
 	}
 
-	newNode->next = copy->next;
-	copy->next = newNode;
+	new_node->next = copy->next;
+	copy->next = new_node;
 
-	return (newNode);
+	return (new_node);
 }
