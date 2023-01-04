@@ -8,48 +8,50 @@
  *
  * Return: returns the listing
  */
+
 listint_t *insert_node(listint_t **head, int number)
 {
-	listint_t *newNode, *copy = *head;
-	int num, i = 0, j;
+	listint_t *newNode, *copy = *head, *copy2 = *head;
+	int num, i, index = 0;
 
 	newNode = malloc(sizeof(listint_t));
 
 	if (newNode == NULL)
-	{
-		*head = NULL;
 		return (NULL);
-	}
 
 	newNode->n = number;
 
+	/*get the index */
 	while (copy->next != NULL)
 	{
 		num = copy->n;
-		if (num != number)
+		if (num < number)
 			copy = copy->next;
 		else
 			break;
-		i++;
+		index++;
 	}
-
-	for (j = 0; j < (i - 1); j++)
+	/* point to the correct = index - 1 */
+	for ( i = 0; i < (index - 1); i++)
 	{
-		if (copy == NULL || copy->next == NULL)
+		if (copy2 == NULL || copy2->next == NULL)
 			return (NULL);
 
-		copy = copy->next;
+		copy2 = copy2->next;
 	}
 
-	if (i == 0)
+	/* perform this if this is the only record*/
+	if (index == 0)
 	{
-		newNode->next = copy;
+		newNode->next = copy2;
 		*head = newNode;
 		return (newNode);
 	}
 
-	newNode->next = copy->next;
-	copy->next = newNode;
+
+
+	newNode->next = copy2->next;
+	copy2->next = newNode;
 
 	return (newNode);
 }
