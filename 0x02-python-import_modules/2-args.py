@@ -9,10 +9,15 @@ if __name__ == "__main__":
     from sys import argv
 
     count = len(argv)
-    if count != 2:
-        print("{} arguments:".format(count - 1))
+    if (count-1) == 1:
+        print("{} argument".format(count - 1), end="")
     else:
-        print("{} argument.".format(count - 1))
+        print("{} arguments".format(count - 1), end="")
+
+    if (count - 1) == 1:
+        print(".")
+    else:
+        print(":")
 
     for i in range(1, count):
         print("{}: {}".format(i, argv[i]))
