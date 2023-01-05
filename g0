@@ -1,4 +1,0 @@
-#!/bin/bash
-git add .
-git commit -m "Task 0 - 13"
-git push
