@@ -1,4 +1,9 @@
-#!/usr/bin/env python3
-a = __import__('variable_load_5').a
+#!/usr/bin/python3
 
-print("{}".format(a))
+
+if __name__ == "__main__":
+    """dasd"""
+
+    from variable_load_5 import a
+
+    print("{}".format(a))
