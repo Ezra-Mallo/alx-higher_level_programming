@@ -14,7 +14,7 @@ if __name__ == "__main__":
     else:
         print("{} arguments".format(count - 1), end="")
 
-    if (count - 1) == 1:
+    if (count - 1) == 0:
         print(".")
     else:
         print(":")
