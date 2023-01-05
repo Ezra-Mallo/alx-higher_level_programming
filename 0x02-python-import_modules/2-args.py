@@ -12,7 +12,7 @@ if __name__ == "__main__":
     if count != 2:
         print("{} arguments:".format(count - 1))
     else:
-        print("{} argument:".format(count - 1))
+        print("{} argument.".format(count - 1))
 
     for i in range(1, count):
         print("{}: {}".format(i, argv[i]))
