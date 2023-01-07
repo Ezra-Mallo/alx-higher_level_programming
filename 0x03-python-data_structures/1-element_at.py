@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def element_at(my_list, idx):
     """Write a function that retrieves an element from a list like in C."""
 
@@ -8,4 +9,3 @@ def element_at(my_list, idx):
         if k == idx:
             return num
         k += 1
-

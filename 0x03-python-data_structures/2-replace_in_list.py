@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def replace_in_list(my_list, idx, element):
     """Write a function that replaces an element of a list at a
 
@@ -11,6 +12,3 @@ def replace_in_list(my_list, idx, element):
     else:
         my_list[idx] = element
         return my_list
-
-
-
