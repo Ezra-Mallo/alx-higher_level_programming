@@ -7,7 +7,9 @@ def replace_in_list(my_list, idx, element):
                 specific position (like in C)."""
 
     count = len(my_list)
-    if idx < 0 or idx > count :
+    if idx < 0:
+        return my_list
+    elif idx > count:
         return my_list
     else:
         my_list[idx] = element
