@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 
+
 # 5-no_c.py
 # ezra.mallo@gmail.com
 
 def no_c(my_string):
+    """Write a function that removes all characters c and C from a string."""
+
     new_string = ""
     for i in range(len(my_string)):
         xter = my_string[i]
