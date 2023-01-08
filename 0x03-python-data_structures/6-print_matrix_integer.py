@@ -13,3 +13,5 @@ def print_matrix_integer(matrix=[[]]):
                 print("{:d} ".format(matrix[row][col]), end="")
             elif col == 2:
                 print("{:d}".format(matrix[row][col]), end="\n")
+
+        print("\n")
