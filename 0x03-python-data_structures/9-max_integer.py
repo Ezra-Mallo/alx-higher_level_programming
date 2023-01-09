@@ -12,4 +12,5 @@ def max_integer(my_list=[]):
             if maximum <= my_list[i]:
                 maximum = my_list[i]
         return maximum
-    return None
+    else:
+        return (None)
