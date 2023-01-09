@@ -6,8 +6,9 @@
 def max_integer(my_list=[]):
     """Function that finds the biggest integer of a list."""
 
-    maximum = 0
-    for i in range(len(my_list)):
-        if maximum <= my_list[i]:
-            maximum = my_list[i]
-    return maximum
+    if my_list != 0:
+        maximum = 0
+        for i in range(len(my_list)):
+            if maximum <= my_list[i]:
+                maximum = my_list[i]
+        return maximum
