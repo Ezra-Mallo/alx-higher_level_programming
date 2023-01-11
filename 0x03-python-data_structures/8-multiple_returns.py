@@ -9,7 +9,7 @@ def multiple_returns(sentence):
 
     lenght = len(sentence)
     if lenght == 0:
-        return (None)
+        return (None, None)
     else:
         first_xter = sentence[0]
 
