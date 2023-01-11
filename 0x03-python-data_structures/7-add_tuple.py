@@ -6,6 +6,15 @@
 def add_tuple(tuple_a=(), tuple_b=()):
     """Write a function that adds 2 tuples."""
 
-    for i in len(tuple_a):
-        for j in range(len(tuple_b)):
-            print("{}".format(tuple_a[i, j]))
+    if len(tuple_a) < 2:
+        if len(tuple_a) == 0:
+            tuple_a = 0, 0
+        else:
+            tuple_a = tuple_a[0], 0
+    if len(tuple_b) < 2:
+        if len(tuple_b) == 0:
+            tuple_b = 0, 0
+        else:
+            tuple_b = tuple_b[0], 0
+
+    return (tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1])
