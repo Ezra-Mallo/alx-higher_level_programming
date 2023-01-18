@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+# 10-best_score.py
+# ezra.mallo@gmail.com
+
+
+def best_score(a_dictionary):
+    if isinstance(a_dictionary, dict) == False:
+        return ("None")
+    highest_score = 0
+    for index in a_dictionary:
+        score = a_dictionary[index]
+        if highest_score < score:
+            highest_key = index
+            highest_score = score
+    return (highest_score)
