@@ -9,11 +9,10 @@ def best_score(a_dictionary):
     if not isinstance(a_dictionary, dict) or len(a_dictionary) == 0:
         return None
 
-    key = list(a_dictionary.keys())[0]
-    highest_score = a_dictionary[key]
-    for index in a_dictionary:
-        score = a_dictionary[index]
-        if highest_score < score:
-            highest_key = index
-            highest_score = score
-    return (highest_score)
+    ret = list(a_dictionary.keys())[0]
+    big = a_dictionary[ret]
+    for k, v in a_dictionary.items():
+        if v > big:
+            big = v
+            ret = k
+    return (ret)
