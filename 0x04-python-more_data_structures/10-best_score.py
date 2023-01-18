@@ -14,4 +14,6 @@ def best_score(a_dictionary):
         if highest_score < score:
             highest_key = index
             highest_score = score
+    if score == 0:
+        return ("None")
     return (highest_score)
