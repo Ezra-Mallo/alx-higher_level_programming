@@ -3,6 +3,9 @@
 # ezra.mallo@gmail.com
 
 def weight_average(my_list=[]):
+    if not isinstance(my_list, list) or len(my_list) == 0:
+        return (0)
+
     a = b = 0
     for ind1, ind2 in my_list:
         a += ind1 * ind2
