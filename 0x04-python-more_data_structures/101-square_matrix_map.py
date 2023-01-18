@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-# 100-weight_average.py
+# 101-square_matrix_map.py
 # ezra.mallo@gmail.com
 
 
 def square_matrix_map(matrix=[]):
+    """Function that computes the square value
+    of all integers of a matrix using map"""
 
     if not isinstance(matrix, list) or len(matrix) == 0:
         return (0)
