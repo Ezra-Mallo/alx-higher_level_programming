@@ -8,9 +8,7 @@ def best_score(a_dictionary):
 
     if not isinstance(a_dictionary, dict) or len(a_dictionary) == 0:
         return None
-
-    key = list(a_dictionary.keys())[0]
-    highest_score = a_dictionary[key]
+    highest_score = 0
     for index in a_dictionary:
         score = a_dictionary[index]
         if highest_score < score:
