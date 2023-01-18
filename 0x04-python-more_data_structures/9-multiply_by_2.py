@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 # 9-multiply_by_2.py
 # ezra.mallo@gmail.com
 
