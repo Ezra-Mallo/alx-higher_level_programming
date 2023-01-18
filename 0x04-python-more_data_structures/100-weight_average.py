@@ -3,6 +3,9 @@
 # ezra.mallo@gmail.com
 
 def weight_average(my_list=[]):
+    """Function that returns the weighted average of all
+    integers tuple (<score>, <weight>)"""
+
     if not isinstance(my_list, list) or len(my_list) == 0:
         return (0)
 
