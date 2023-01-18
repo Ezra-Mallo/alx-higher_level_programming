@@ -6,7 +6,7 @@
 def best_score(a_dictionary):
     """Function that returns a key with the biggest integer value."""
 
-    if isinstance(a_dictionary, dict) == False:
+    if isinstance(a_dictionary, dict) is False:
         return ("None")
     highest_score = 0
     for index in a_dictionary:
