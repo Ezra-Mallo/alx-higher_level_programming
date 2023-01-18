@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 # 11-multiply_list_map.py
 # ezra.mallo@gmail.com
 
