@@ -4,5 +4,7 @@
 
 
 def print_sorted_dictionary(a_dictionary):
-    for keys in sorted(a_dictionary.keys()):
-        print('{}: {}'. format(keys, a_dictionary[keys]))
+
+    a_dic = a_dictionary.copy()
+    for keys in sorted(a_dic.keys()):
+        print('{}: {}'. format(keys, a_dic[keys]))
