@@ -20,11 +20,11 @@ def roman_to_int(roman_string):
     while i < len(roman_string):
         """i+1 checks if their is the next string after i to avoid error
         roman_string[i:i+2] chend 2 cter for IX, IV, XL, CD, CM)"""
-        if (i+1) < len(roman_string) and (roman_string[i:i+2]) in roman_dict:
-            num += roman_dict[roman_string[i:i+2]]
+        if (i + 1) < len(roman_string) and (roman_string[i: i + 2]) in roman_dict:
+            num += roman_dict[roman_string[i: i + 2]]
             i += 2 #jump 2 xters
         else:
             #print(i)
             num += roman_dict[roman_string[i]]
-            i+=1
+            i+= 1
     return num
