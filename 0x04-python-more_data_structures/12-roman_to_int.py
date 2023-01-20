@@ -2,19 +2,31 @@
 
 
 def roman_to_int(roman_string):
-   res = ""
-   table = [
-           (1000, "M"), (900, "CM"), (500, "D"), (400, "CD"),
-           (100, "C"), (90, "XC"), (50, "L"), (40, "XL"),
-           (10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I"),
-           ]
+      roman_dict = {'I':1,
+              'V':5,
+              'X':10,
+              'L':50,
+              'C':100,
+              'D':500,
+              'M':1000,
+              'IV':4,
+              'IX':9,
+              'XL':40,
+              'XC':90,
+              'CD':400,
+              'CM':900}
+      i = 0
+      num = 0
 
-   for ind, roman in table:
-       d, m = divmod(roman_string, ind)
-      res += roman * d
-      num = m
-
-   return res
-
-   import roman
-    return (roman.fromRoman(romman_string))
+      while i < len(roman_string):
+         """i+1 checks if their is the next string after i to avoid error
+         roman_string[i:i+2] chend 2 cter for IX, IV, XL, CD, CM)
+         """
+         if (i+1) < len(roman_string) and (roman_string[i:i+2]) in roman_dict:
+            num += roman_dict[roman_string[i:i+2]]
+            i += 2 #jump 2 xters
+         else:
+            #print(i)
+            num += roman_dict[roman_string[i]]
+            i+=1
+      return num
