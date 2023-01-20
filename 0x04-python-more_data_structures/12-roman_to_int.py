@@ -2,8 +2,7 @@
 
 
 def roman_to_int(roman_string):
-    roman_dict = {
-            'I': 1,
+    roman_dict = {'I':1,
             'V': 5,
             'X': 10,
             'L': 50,
@@ -15,18 +14,19 @@ def roman_to_int(roman_string):
             'XL': 40,
             'XC': 90,
             'CD': 400,
-            'CM': 900}
-    i = 0
-    num = 0
+              'CM': 900}
+      i = 0
+      num = 0
 
-    while i < len(roman_string):
-    """i+1 checks if their is the next string after i to avoid error
-    roman_string[i:i+2] chend 2 cter for IX, IV, XL, CD, CM)"""
-        if (i+1) < len(roman_string) and (roman_string[i:i+2]) in roman_dict:
+      while i < len(roman_string):
+         """i+1 checks if their is the next string after i to avoid error
+         roman_string[i:i+2] chend 2 cter for IX, IV, XL, CD, CM)
+         """
+         if (i+1) < len(roman_string) and (roman_string[i:i+2]) in roman_dict:
             num += roman_dict[roman_string[i:i+2]]
             i += 2 #jump 2 xters
-        else:
+         else:
             #print(i)
             num += roman_dict[roman_string[i]]
-            i += 1
-        return num
+            i+=1
+      return num
