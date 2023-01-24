@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # 0-square-py
 # ezra.malo@gmail.com
-"""Define Square class"""
 
 
 class Square:
