@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 # 0-square-py
 # ezra.malo@gmail.com
-"""Class Square"""
+"""Defines the class object Square"""
 
 
 class Square:
-    """Class Square that defines a squarei object"""
+    """An empty class object Square"""
 
     pass
