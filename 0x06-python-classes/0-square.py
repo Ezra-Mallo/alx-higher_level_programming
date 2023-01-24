@@ -7,7 +7,4 @@
 class Square:
     """Class Square that defines a squarei object"""
 
-    def __init__(self, name):
-        """Does nothing"""
-
-        pass
+    pass
