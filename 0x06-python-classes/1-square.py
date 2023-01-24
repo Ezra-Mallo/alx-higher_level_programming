@@ -9,4 +9,4 @@ class Square:
 
     def __init__(self, name, size=0):
         self.name = name
-        __size = size
+        self.__size = size
