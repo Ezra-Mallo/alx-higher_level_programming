@@ -6,5 +6,7 @@
 class Square:
     """Square that defines a square:"""
 
-    def __init__(self):
+    def __init__(self, name):
         """Initialization"""
+
+        self.name = name
