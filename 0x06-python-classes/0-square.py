@@ -9,4 +9,4 @@ class Square:
     def __init__(self, name):
         """Initialization"""
 
-        self.name = name
+        pass
