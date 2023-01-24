@@ -3,10 +3,11 @@
 # ezra.malo@gmail.com
 """Class Square"""
 
+
 class Square:
-    """Square that defines a square:"""
+    """Class Square that defines a squarei object"""
 
     def __init__(self, name):
-        """Initialization"""
+        """Does nothing"""
 
         pass
