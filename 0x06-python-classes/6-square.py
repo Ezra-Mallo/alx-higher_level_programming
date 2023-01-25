@@ -40,8 +40,8 @@ class Square:
         """property setter to set position to a tuple"""
 
         if not isinstance(value, tuple) and len(value) != 2 and \
-                not isinstance(value[0], int) and value[0] >= 0 and \
-                not isinstance(value[1], int) and value[1] >= 0:
+                isinstance(value[0], int) and value[0] >= 0 and \
+                isinstance(value[1], int) and value[1] >= 0:
             raise TypeError('position must be a tuple of 2 positive integers')
 
         #if not isinstance(value, tuple):
