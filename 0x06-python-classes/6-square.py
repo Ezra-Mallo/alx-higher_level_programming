@@ -52,8 +52,6 @@ class Square:
 
         self.__position = value
 
-        #not all(isinstance(num, int) for num in value) can replace 44-45
-
     def area(self):
         """Compute Area"""
 
