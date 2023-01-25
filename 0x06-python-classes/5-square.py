@@ -40,6 +40,4 @@ class Square:
         """prints in stdout the square with the character i#"""
 
         for i in range(self.__size):
-            for j in range(self.__size):
-                print("#", end="")
-            print()
+            print("#" * 3)
