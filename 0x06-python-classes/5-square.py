@@ -35,6 +35,11 @@ class Square:
         """Compute Area"""
 
         return (self.__size * self.__size)
-    
+
     def my_print(self):
-        print(self.area())
+        """prints in stdout the square with the character i#"""
+
+        for i in range(self.__size):
+            for j in range(self.__size):
+                print("#", end="")
+            print()
