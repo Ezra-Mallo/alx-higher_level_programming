@@ -21,7 +21,7 @@ class Rectanglei(self):
         return self.__width
 
     @width.setter
-    def with(self, value):
+    def width(self, value):
         """Property setter for the value for the widht"""
 
         if not isinstance(value, int):
