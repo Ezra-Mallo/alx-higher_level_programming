@@ -4,7 +4,7 @@
 """Represent a rectangle Class."""
 
 
-class Rectangle:
+class Rectanglei(self):
     """Represent a rectangle."""
     self.width = 0
 
