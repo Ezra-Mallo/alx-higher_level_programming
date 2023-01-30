@@ -1,0 +1,50 @@
+===========================
+How to  use 4-print_square.py
+===========================
+
+Write a function that prints square using #
+
+=====
+
+usage:
+1==========================================================================
+Import
+    >>> print_square = __import__('4-print_square').print_square
+    
+    
+2==========================================================================
+Print 3 square shape
+
+    >>> print_square(3)
+    ###
+    ###
+    ###
+
+ 
+3==========================================================================
+Print 4 square shape
+
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+4==========================================================================
+Print 0 square shape
+
+    >>> print_square(0)
+
+5==========================================================================
+Print 4.2 square shape
+
+    >>> print_square(4.2)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+6==========================================================================
+Print -4 square shape
+
+    >>> print_square(-4)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0

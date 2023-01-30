@@ -1,0 +1,113 @@
+==========================================================================
+How to  use 2-matrix_divided.py
+==========================================================================
+
+This module divides all elements of a matrix.
+
+==========================================================================
+Usage:
+	print(matrix_divided(matrix, num))
+	matrix is any type of matric with equa number of elements per roll
+	num = an interger or float
+
+
+==========================================================================
+Examples:
+1==========================================================================
+    >>> matrix_divided =  __import__('2-matrix_divided').matrix_divided
+
+2==========================================================================
+Divide 2x3 matrix with an integer
+
+    >>> matrix = [
+    ...     [10, 20, 30],
+    ...     [40, 50, 60]
+    ... ]
+
+3==========================================================================
+    >>> print(matrix_divided(matrix, 2))
+    [[5.0, 10.0, 15.0], [20.0, 25.0, 30.0]]
+
+4==========================================================================
+Divide 2x3 matrix with an integer
+
+    >>> matrix = [
+    ...     [-10, 20, 30],
+    ...     [40, -50, 60]
+    ... ]
+
+5==========================================================================
+    >>> print(matrix_divided(matrix, 2))
+    [[-5.0, 10.0, 15.0], [20.0, -25.0, 30.0]]
+
+6==========================================================================
+Divide 2x3 matrix with an float
+
+    >>> matrix = [
+    ...     [10, 20, 30],
+    ...     [40, 50, 60]
+    ... ]
+
+7==========================================================================
+    >>> print(matrix_divided(matrix, 2.0))
+    [[5.0, 10.0, 15.0], [20.0, 25.0, 30.0]]
+
+8==========================================================================
+Divide 2x3 matrix with an float
+
+    >>> matrix = [
+    ...     [1, 12, 30],
+    ...     [40, 50, 60]
+    ... ]
+
+9==========================================================================
+    >>> print(matrix_divided(matrix, 3.0))
+    [[0.33, 4.0, 10.0], [13.33, 16.67, 20.0]]
+
+10==========================================================================
+Divide 2x3 matrix with an integer
+
+    >>> matrix = [
+    ...     [10, 30],
+    ...     [40, 50, 60]
+    ... ]
+
+11==========================================================================
+    >>> print(matrix_divided(matrix, 2))
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+
+12,13==========================================================================
+Divide 2x3 matrix with an integer
+
+    >>> matrix = [
+    ...     [10, 20, 30, 45],
+    ...     [40, 50, 60]
+    ... ]
+    >>> print(matrix_divided(matrix, 2))
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+14,15==========================================================================
+Divide 2x3 matrix with an integer
+
+    >>> matrix = [
+    ...     [10, 20, 30],
+    ...     [40, 50, 60]
+    ... ]
+    >>> print(matrix_divided(matrix, "2"))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+16,17==========================================================================
+Divide 2x3 matrix with an integer
+
+    >>> matrix = [
+    ...     [10, 20, 30],
+    ...     [40, 50, 60]
+    ... ]
+    >>> print(matrix_divided(matrix, 0))
+    Traceback (most recent call last):
+    TypeError: division by zero
+

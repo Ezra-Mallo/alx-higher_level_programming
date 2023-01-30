@@ -1,0 +1,39 @@
+===========================
+How to  use 5-text_indentation.py
+===========================
+
+This module is a function that prints a text with 2 new lines 
+after each of these characters: ., ? and :
+
+
+1==========================================================================
+Import
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+2==========================================================================
+Print string
+
+    >>> text_indentation("""Lorem ipsum dolor sit amet, adipiscing elit. \
+    ... Quonam modo? Utrum igitur tibi litteram videor an totas paginas? \
+    ... Non autem hoc: igitur ne illud quidem. Fortasse id, sed ubi illud: \
+    ... beatiorem! Iam ruinas videres""")
+    Lorem ipsum dolor sit amet, adipiscing elit.
+    <BLANKLINE>
+    Quonam modo?
+    <BLANKLINE>
+    Utrum igitur tibi litteram videor an totas paginas?
+    <BLANKLINE>
+    Non autem hoc:
+    <BLANKLINE>
+    igitur ne illud quidem.
+    <BLANKLINE>
+    Fortasse id, sed ubi illud:
+    <BLANKLINE>
+
+3==========================================================================
+Print non string
+
+    >>> text_indentation(1000)
+    Traceback (most recent call last):
+    TypeError: text must be a string

@@ -6,11 +6,6 @@
 def add_integer(a, b=98):
     """Sum two numbers.
 
-    Examples:
-        >>> add_integer(3, 4)
-        7
-        >>> add_integer(3.0, 4.0)
-        7
 
     Args:
         a (int): integer or float
@@ -20,6 +15,12 @@ def add_integer(a, b=98):
                  convert to integer if it is float
                  Sum of a, b
     Raises: TypeError
+
+    Examples:
+        >>> add_integer(3, 4)
+        7
+        >>> add_integer(3.0, 4.0)
+        7
 
     """
 
