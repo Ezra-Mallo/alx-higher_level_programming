@@ -2,6 +2,7 @@
 # 19-copy_list.py
 # ezra.mallo@gmail.com
 
+
 def copy_list(l):
     """Returns a copy of a list.
 
@@ -9,7 +10,6 @@ def copy_list(l):
         l:List
     Return: list
     """
-    my_list =l[:]
-
+    my_list = l[:]
 
     return (my_list)
