@@ -67,7 +67,12 @@ i        return self.__width
             return (2 * (self.__width + self.height))
 
     def __str__(self):
-        """Str"""
+        """Return the printable representation of the Rectangle.
+        Represents the rectangle with the # character.
+        """
+
+        if self.__width == 0 or self.__height == 0:
+            return ("")
 
         my_str = []
         for h in range(self.__height):
