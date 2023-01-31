@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 3-rectangle.py
-#  ezra.mallo@gmail.com
+# ezra.mallo@gmail.com
 """ Rectangle class"""
 
 
@@ -24,7 +24,7 @@ class Rectangle:
     def width(self):
         """Getter for width"""
 
-        return self.__width
+i        return self.__width
 
     @width.setter
     def width(self, value):
