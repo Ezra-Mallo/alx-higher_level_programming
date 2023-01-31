@@ -5,7 +5,6 @@
 
 
 class Rectangle:
-
     def __init__(self, width=0, height=0):
         """Initialization
 
@@ -73,10 +72,9 @@ class Rectangle:
 
         if self.__width == 0 or self.__height == 0:
             return ("")
-
-        my_str = []
-        for h in range(self.__height):
-            for w in range(self.__width):
-                my_str.append("#")
-            my_str.append("\n")
-        return ("".join(my_str))
+        rect = []
+        for i in range(self.__height):
+            [rect.append('#') for j in range(self.__width)]
+            if i != self.__height - 1:
+                rect.append("\n")
+        return ("".join(rect))
