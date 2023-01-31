@@ -1,3 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3:wq
+
 def copy_list(l):
-    return(my_list=list(l[:]))
+    return (l.copy())
