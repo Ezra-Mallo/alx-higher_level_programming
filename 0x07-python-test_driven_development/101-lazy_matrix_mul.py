@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import numpy as np
 
 
 def lazy_matrix_mul(m_a, m_b):
@@ -10,6 +11,5 @@ def lazy_matrix_mul(m_a, m_b):
     Return: matrix product
 
     """
-    import numpy as np
 
     return (np.matmul(m_a, m_b))

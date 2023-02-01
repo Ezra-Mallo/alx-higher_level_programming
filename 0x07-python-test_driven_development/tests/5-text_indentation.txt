@@ -9,6 +9,7 @@ after each of these characters: ., ? and :
 1==========================================================================
 Import
     >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
 
 
 2==========================================================================
