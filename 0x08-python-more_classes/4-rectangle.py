@@ -72,6 +72,7 @@ class Rectangle:
             if h < self.__height-1:
                 my_str.append("\n")
         return ("".join(my_str))
+
     def __repr__(self):
         """Return the string representation of the Rectangle."""
         rect = "Rectangle(" + str(self.__width)
