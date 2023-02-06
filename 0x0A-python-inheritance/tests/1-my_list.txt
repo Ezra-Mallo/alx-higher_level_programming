@@ -26,11 +26,57 @@ create and instance the class and it will inherit all the feature of the class
     >>> print(my_list)
     [1, 2, 3]
 
-
+==============================================================================
     >>> my_list = MyList()
-    >>> my_list.append(1)
-    >>> my_list.append(2)
-    >>> my_list.append(3)
+    >>> my_list.append(10)
+    >>> my_list.append(12)
+    >>> my_list.append(32)
     >>> my_list.append(4)
     >>> print(my_list)
-    [1, 2, 3, 4]
+    [10, 12, 32, 4]
+
+==============================================================================
+
+    >>> my_list.print_sorted()
+    [4, 10, 12, 32]
+
+==============================================================================
+
+    >>> my_list = MyList([])
+    >>> my_list.append("Election")
+    >>> my_list.append("Peter")
+    >>> my_list.append("Ada")
+    >>> my_list.append("Ezra")
+    >>> my_list.append("Alx")
+    >>> print(my_list)
+    ['Election', 'Peter', 'Ada', 'Ezra', 'Alx']
+
+
+==============================================================================
+
+    >>> my_list.print_sorted()
+    ['Ada', 'Alx', 'Election', 'Ezra', 'Peter']
+
+
+==============================================================================
+
+    >>> my_list = MyList([4, -10, 2, 32])
+    >>> print(my_list)
+    [4, -10, 2, 32]
+
+==============================================================================
+
+    >>> my_list.print_sorted()
+    [-10, 2, 4, 32]
+
+==============================================================================
+
+    >>> my_list = MyList([1, 2], [3, 4])
+    Traceback (most recent call last):
+    TypeError: list expected at most 1 argument, got 2
+
+
+==============================================================================
+
+    >>> my_list = MyList([3, "Alx", 4])
+
