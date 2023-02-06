@@ -34,14 +34,14 @@ void print_python_bytes(PyObject *p)
 	PyBytesObject *pbo;
 
 	pbo = (PyBytesObject *)p;
-
 	size = pbo->ob_base.ob_size;
+
+	printf("[.] bytes object info\n");
 	if (size >= 10)
 		byte_size = 10;
 	else
 		byte_size = size + 1;
 
-	printf("[.] bytes object info\n");
 	printf("   size: %d\n", size);
 	printf("   trying string: %s\n", pbo->ob_sval);
 	printf("   first %d bytes: ", byte_size);
