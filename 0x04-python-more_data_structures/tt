@@ -1,0 +1,150 @@
+[.] bytes object info
+   size: 5
+   trying string: Hello
+   first 6 bytes: 48 65 6c 6c 6f 00 
+[.] bytes object info
+   size: 8
+   trying string: ÿø
+   first 9 bytes: ff f8 00 00 00 00 00 00 00 
+[.] bytes object info
+   size: 60
+   trying string: What does the 'b' character do in front of a string literal?
+   first 10 bytes: 57 68 61 74 20 64 6f 65 73 20 
+[*] Python list info
+[*] Size of the Python List = 2
+[*] Allocated = 2
+Element 0: bytes
+[.] bytes object info
+   size: 5
+   trying string: Hello
+   first 6 bytes: 48 65 6c 6c 6f 00 
+Element 1: bytes
+[.] bytes object info
+   size: 5
+   trying string: World
+   first 6 bytes: 57 6f 72 6c 64 00 
+[*] Python list info
+[*] Size of the Python List = 1
+[*] Allocated = 2
+Element 0: bytes
+[.] bytes object info
+   size: 5
+   trying string: Hello
+   first 6 bytes: 48 65 6c 6c 6f 00 
+[*] Python list info
+[*] Size of the Python List = 8
+[*] Allocated = 8
+Element 0: bytes
+[.] bytes object info
+   size: 5
+   trying string: Hello
+   first 6 bytes: 48 65 6c 6c 6f 00 
+Element 1: int
+[.] bytes object info
+   size: 1
+   trying string: #
+   first 2 bytes: 23 00 
+Element 2: int
+[.] bytes object info
+   size: 1
+   trying string: 
+   first 2 bytes: 0f 00 
+Element 3: float
+[.] bytes object info
+   size: 0
+   trying string: 
+   first 1 bytes: 05 
+Element 4: tuple
+[.] bytes object info
+   size: 2
+   trying string:  o•
+   first 3 bytes: 20 6f 95 
+Element 5: list
+[.] bytes object info
+   size: 3
+   trying string: 
+   first 4 bytes: 03 00 00 00 
+Element 6: bytes
+[.] bytes object info
+   size: 9
+   trying string: Holberton
+   first 10 bytes: 48 6f 6c 62 65 72 74 6f 6e 00 
+Element 7: str
+[.] bytes object info
+   size: 5
+   trying string: å
+   first 6 bytes: e5 00 00 00 00 00 
+[*] Python list info
+[*] Size of the Python List = 0
+[*] Allocated = 0
+[*] Python list info
+[*] Size of the Python List = 1
+[*] Allocated = 4
+Element 0: int
+[.] bytes object info
+   size: 0
+   trying string: Š
+   first 1 bytes: 8a 
+[*] Python list info
+[*] Size of the Python List = 5
+[*] Allocated = 8
+Element 0: int
+[.] bytes object info
+   size: 0
+   trying string: ‹
+   first 1 bytes: 8b 
+Element 1: int
+[.] bytes object info
+   size: 1
+   trying string: n
+   first 2 bytes: 6e 00 
+Element 2: int
+[.] bytes object info
+   size: 1
+   trying string: -
+   first 2 bytes: 2d 00 
+Element 3: int
+[.] bytes object info
+   size: 1
+   trying string: @
+   first 2 bytes: 40 00 
+Element 4: int
+[.] bytes object info
+   size: 1
+   trying string: "
+   first 2 bytes: 22 00 
+[*] Python list info
+[*] Size of the Python List = 4
+[*] Allocated = 8
+Element 0: int
+[.] bytes object info
+   size: 0
+   trying string: ‹
+   first 1 bytes: 8b 
+Element 1: int
+[.] bytes object info
+   size: 1
+   trying string: n
+   first 2 bytes: 6e 00 
+Element 2: int
+[.] bytes object info
+   size: 1
+   trying string: -
+   first 2 bytes: 2d 00 
+Element 3: int
+[.] bytes object info
+   size: 1
+   trying string: ?
+   first 2 bytes: 3f 00 
+[*] Python list info
+[*] Size of the Python List = 1
+[*] Allocated = 1
+Element 0: str
+[.] bytes object info
+   size: 9
+   trying string: å
+   first 10 bytes: e5 00 00 00 00 00 00 00 00 00 
+[.] bytes object info
+   size: 1
+   trying string: 
+   first 2 bytes: 01 00 
