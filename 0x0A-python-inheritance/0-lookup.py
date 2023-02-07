@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # 0-lookup.py
 # ezra.mallo@gmail.com
-"""Defines function that returns the list"""
+"""Defines a function that returns the list"""
 
 
 def lookup(obj):

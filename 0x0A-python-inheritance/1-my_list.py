@@ -5,7 +5,10 @@
 
 
 class MyList(list):
-    """ A class MyList that inherits from list    """
+    """ A class MyList that inherits from list
+        Args:
+            list
+    """
 
     def print_sorted(self):
         """Print listed as sorted
