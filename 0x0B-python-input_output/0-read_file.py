@@ -15,5 +15,4 @@ def read_file(filename=""):
         for line in my_file:
             print(line, end="")
 
-
     my_file.closed
