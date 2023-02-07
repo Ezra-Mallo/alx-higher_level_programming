@@ -6,10 +6,18 @@
 you provided
 
 usage
-======
+-----
 1. Import the class BaseGeometry from 7-base-geometry.py
-2. instanciate the class
-3. test your code and document
+
+        ``` BaseGeometry = __import__('7-base_geometry').BaseGeometry```
+
+2. instanciate the class 
+        ```bg = BaseGeometry()```
+
+3. test the methods and document
+        ```bg.area()```
+        ```bg.integer_validator(....)```
+
 =============================================================================
 Class
 ======
