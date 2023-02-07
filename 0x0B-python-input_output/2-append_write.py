@@ -1,13 +1,15 @@
 #!/usr/bin/python3
-# 1-write_file.py
+# 2-append_write.py
 # ezra.mallo@gmail.com
 """Defines function that write to a text file"""
 
 
-def write_file(filename="", text=""):
-    """Writes a string to a text file (UTF8) 
+def append_write(filename="", text=""):
+    """Appends a string at the end of a text file (UTF8)
+
 
     and
+
     returns number of characters written
 
     Args:
@@ -18,7 +20,7 @@ def write_file(filename="", text=""):
         Number of test written
     """
 
-    with open(filename, "w") as my_file:
+    with open(filename, "a") as my_file:
         count = my_file.write(str(text))
 
     my_file.closed
