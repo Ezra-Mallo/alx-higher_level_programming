@@ -15,4 +15,4 @@ def to_json_string(my_obj):
         the object is returned in json format
     """
 
-    return(json.dumps(str(my_obj)))
+    return(json.dumps(my_obj))
