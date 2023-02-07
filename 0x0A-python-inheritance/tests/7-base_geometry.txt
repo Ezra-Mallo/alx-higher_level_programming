@@ -1,0 +1,41 @@
+=============================================================================
+7-base_geometry.txt
+
+=============================================================================
+```BaseGeometry```` is s class that raises exception based on the argument
+you provided
+
+usage
+======
+1. Import the class BaseGeometry from 7-base-geometry.py
+2. instanciate the class
+3. test your code and document
+=============================================================================
+
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Ezra", "width", 89)
+    Traceback (most recent call last):
+    TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+=============================================================================
+    >>> bg.integer_validator(89)
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+=============================================================================
+    >>> bg.integer_validator("width", 89)
+
+
+=============================================================================
+    >>> bg.integer_validator("width", "89")
+    Traceback (most recent call last):
+    TypeError: width must be an integer
+
+
+=============================================================================
+    >>> bg.integer_validator("Height", 0)
+    Traceback (most recent call last):
+    TypeError: Height must be greater than 0
+
+
