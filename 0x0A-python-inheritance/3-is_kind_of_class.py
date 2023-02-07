@@ -3,9 +3,8 @@
 # ezra.mallo@gmail.com
 
 
-def is_same_class(obj, a_class):
-    """Returns True if the object = an instance of the specified class
-    or
+def is_kind_of_class(obj, a_class):
+    """Checks if obj is and instance of a class or subclass
 
     Args:
         obj: Object
@@ -13,9 +12,9 @@ def is_same_class(obj, a_class):
     Returns:
         True: if is instance
         False: if not
+        """
 
-    otherwise False."""
-
-    if type(obj) == a_class:
+    print(dir(obj))
+    if isinstance(obj, a_class):
         return (True)
     return (False)
