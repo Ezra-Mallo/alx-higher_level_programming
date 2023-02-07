@@ -11,25 +11,50 @@ usage
 2. instanciate the class
 3. test your code and document
 =============================================================================
-
+Class
+======
     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    >>> bg = BaseGeometry("Ezra")
+    Traceback (most recent call last):
+    TypeError: BaseGeometry() takes no arguments
+
+
+=============================================================================
+    >>> bg = BaseGeometry(None)
+    Traceback (most recent call last):
+    TypeError: BaseGeometry() takes no arguments
+
+
+=============================================================================
     >>> bg = BaseGeometry()
+
+
+
+
+=============================================================================
+methods
+========
+
     >>> bg.integer_validator("Ezra", "width", 89)
     Traceback (most recent call last):
     TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
 
 =============================================================================
     >>> bg.integer_validator()
     Traceback (most recent call last):
     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
+
 =============================================================================
     >>> bg.integer_validator(89)
     Traceback (most recent call last):
     TypeError: integer_validator() missing 1 required positional argument: 'value'
 
+
 =============================================================================
     >>> bg.integer_validator(5, 8)
+
 
 =============================================================================
     >>> bg.integer_validator("width", 89)
@@ -45,6 +70,7 @@ usage
     >>> bg.integer_validator("Height", 0)
     Traceback (most recent call last):
     TypeError: Height must be greater than 0
+
 
 =============================================================================
     >>> bg.area()
