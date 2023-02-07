@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # 3-is_kind_of_class.py
 # ezra.mallo@gmail.com
-"""Defines a function to check same class or inherit"""
+"""Defines a class and function to check class or inherit"""
 
 
 def is_kind_of_class(obj, a_class):
