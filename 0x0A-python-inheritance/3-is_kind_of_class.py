@@ -14,7 +14,6 @@ def is_kind_of_class(obj, a_class):
         False: if not
         """
 
-    print(dir(obj))
     if isinstance(obj, a_class):
         return (True)
     return (False)
