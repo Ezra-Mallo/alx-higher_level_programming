@@ -7,6 +7,11 @@
 class BaseGeometry:
     """Class of BaseGeometry"""
 
+    def __init__(sef):
+        """Initialization"""
+
+        pass
+
     def area(self):
         """Function raises an Exception"""
 
@@ -21,8 +26,7 @@ class BaseGeometry:
             TypeError: when val != int
             ValueError: value <= 0
         """
-
         if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
-            raise TypeError("{} must be greater than 0".format(name))
+            raise ValueError("{} must be greater than 0".format(name))
