@@ -7,6 +7,11 @@
 class MyList(list):
     """A class MyList that inherits from list"""
 
+    def init(self):
+        """Initializatio"""
+
+        pass
+
     def print_sorted(self):
         """Print listed as sorted"""
 
