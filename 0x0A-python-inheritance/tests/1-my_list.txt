@@ -17,7 +17,18 @@ create and instance the class and it will inherit all the feature of the class
     >>> new_list = MyList()
     >>> print(new_list)
     []
+    
+==============================================================================
+    
+    >>> MyList = __import__('1-my_list.py').MyList
+    Traceback (most recent call last):
+    ModuleNotFoundError: No module named '1-my_list.py'; '1-my_list' is not a package
 
+==============================================================================
+    >>> MyList = __import__('1-my_list').Mylist
+    Traceback (most recent call last):
+    AttributeError: module '1-my_list' has no attribute 'Mylist'
+    
 ==============================================================================
 ``new_list inherits My_List behavious```
 
