@@ -80,7 +80,7 @@ methods
 =============================================================================
     >>> bg.integer_validator("Height", 0)
     Traceback (most recent call last):
-    TypeError: Height must be greater than 0
+    ValueError: Height must be greater than 0
 
 
 =============================================================================
