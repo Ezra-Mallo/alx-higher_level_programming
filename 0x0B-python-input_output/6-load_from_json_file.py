@@ -21,4 +21,4 @@ def load_from_json_file(filename):
                 "is_active": true}
 
     with open(filename, "w", newline="") as json_file:
-        json.dump(data, json_file)
+        json.dumps(data)
