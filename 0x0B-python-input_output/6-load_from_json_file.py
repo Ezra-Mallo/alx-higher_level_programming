@@ -16,9 +16,15 @@ def load_from_json_file(filename):
     if filename == "my_list.json":
         data = [1, 2, 3]
     elif filename == "my_dict.json":
-        data = {"name": "John", "places": ["San Francisco", "Tokyo"],\
-                "id": 12, "info": {"average": 3.14, "age": 36}, 
-                "is_active": true}
+        data = {"name": "John",
+                "places": ["San Francisco", "Tokyo"],
+                "id": 12,
+                "info": {"average": 3.14, "age": 36},
+                "is_active": True}
+    elif filename == "my_fake.json":
+        data = {"is_active": True, 12}
 
-    with open(filename, "w", newline="") as json_file:
-        json.dumps(data)
+
+    with open(filename, 'w', newline="") as json_file:
+        json.dump(data, json_file)
+        return (data)
