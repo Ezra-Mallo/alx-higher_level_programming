@@ -10,7 +10,6 @@ count = len(argv)
 if __name__ == "__main__":
     try:
         read_content = load_from_json_file(filename)
-        print(count)
     except FileNotFoundError:
         read_content = []
 
