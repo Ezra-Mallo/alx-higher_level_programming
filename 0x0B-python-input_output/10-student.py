@@ -6,10 +6,6 @@
 class Student:
     """Class Student that defines a student by"""
 
-    first_name = ""
-    last_name = ""
-    age = 0
-
     def __init__(self, first_name, last_name, age):
         """Instatiation
         Args:

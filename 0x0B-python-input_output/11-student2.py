@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-# 9-student.py
-"""Define Module"""
+# 11-student.py
+"""Defines Module"""
 
 
 class Student:
@@ -8,7 +8,8 @@ class Student:
 
     def __init__(self, first_name, last_name, age):
         """Instatiation
-        Args: 
+
+        Args:
             first_name(str): first arguemnt
             last_name(str): 2nd arguement
             age (int): 3rd airguement
@@ -20,7 +21,15 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
+    def to_json(self, attrs=None):
         """Return dictionary of the file object"""
 
-        return(self.__dict__)
+        if (type(attrs) == list and all(type(ele) == str for ele in attrs)):
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+        else:
+            return self.__dict__
+
+    def reload_from_json(self, json):
+        """Replaces all attributes of the Student instance"""
+        for k, v in json.items():
+            setattr(self, k, v)
