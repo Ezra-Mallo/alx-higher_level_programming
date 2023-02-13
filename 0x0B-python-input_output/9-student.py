@@ -2,6 +2,7 @@
 # 9-student.py
 """Define Module"""
 
+
 class Student:
     """Class Student that defines a student by"""
 
@@ -15,3 +16,6 @@ class Student:
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
+
+    def to_json(self):
+        return(self.__dict__)
