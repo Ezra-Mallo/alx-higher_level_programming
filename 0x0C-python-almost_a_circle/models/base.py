@@ -8,8 +8,13 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """Initialisqtion """
+        """Initialize a Base.
 
+        Args:
+            id (str): First Param
+        Raises:
+            None
+        """
         if id is not None:
             self.id = id
         else:
