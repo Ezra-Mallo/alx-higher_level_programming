@@ -7,7 +7,7 @@ class Rectangle(Base):
     """Implimenting Rectangle class"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initialisation 
+        """Initialisation
 
         Args:
             width (int): The width of the new Rectangle.
