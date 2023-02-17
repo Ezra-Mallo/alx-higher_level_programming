@@ -2,7 +2,6 @@
 """Base class"""
 from models.base import Base
 
-
 class Rectangle(Base):
     """Implimenting Rectangle class"""
 
@@ -98,3 +97,28 @@ class Rectangle(Base):
         my_str = f"[Rectangle] ({self.id}) {self.x}/{self.y} - "
         my_str = my_str + f"{self.width}/{self.height}"
         return (my_str)
+
+    def update(self, *args):
+        """update the class Rectangle def update(self, *args)
+
+        Args:
+            1st argument should be the id attribute
+            2nd argument should be the width attribute
+            3rd argument should be the height attribute
+            4th argument should be the x attribute
+            5th argument should be the y attribute
+        Raises: No error
+        Returns: the newe values"""
+        a = 0
+        for arg in args:
+            if a == 0:
+                super().__init__(args[0])
+            elif a == 1:
+                self.width = arg
+            elif a == 2:
+                self.height = arg
+            elif a == 3:
+                self.x = arg
+            elif a == 4:
+                self.y = arg
+            a += 1
