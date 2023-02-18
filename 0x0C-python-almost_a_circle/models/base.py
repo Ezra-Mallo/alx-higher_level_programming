@@ -24,7 +24,7 @@ class Base:
 
     def to_json_string(list_dictionaries):
         """JSON the standard formats for sharing data representation."""
-        if list_dictionaries  == None:
+        if list_dictionaries is None or list_dictionaries == []:
             return ([])
         else:
             return (json.dumps(list_dictionaries))
