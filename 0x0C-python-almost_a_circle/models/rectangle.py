@@ -99,7 +99,7 @@ class Rectangle(Base):
         my_str = my_str + f"{self.width}/{self.height}"
         return (my_str)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """update the class Rectangle def update(self, *args)
 
         Args:
@@ -109,17 +109,31 @@ class Rectangle(Base):
             4th argument should be the x attribute
             5th argument should be the y attribute
         Raises: No error
-        Returns: the newe values"""
-        a = 0
-        for arg in args:
-            if a == 0:
-                super().__init__(args[0])
-            elif a == 1:
-                self.width = arg
-            elif a == 2:
-                self.height = arg
-            elif a == 3:
-                self.x = arg
-            elif a == 4:
-                self.y = arg
-            a += 1
+        Retuirns: the newe values"""
+
+        if args != 0 and len(args) != 0:
+            a = 0
+            for arg in args:
+                if a == 0:
+                    super().__init__(args[0])
+                elif a == 1:
+                    self.width = arg
+                elif a == 2:
+                    self.height = arg
+                elif a == 3:
+                    self.x = arg
+                elif a == 4:
+                    self.y = arg
+                a += 1
+        else:
+            for k, v in kwargs.items():
+                if k == "id":
+                    super().__init__(v)
+                elif k == "width":
+                    self.width = v
+                elif k == "height":
+                    self.height = v
+                elif k == "x":
+                    self.x = v
+                elif k == "y":
+                    self.y = v
