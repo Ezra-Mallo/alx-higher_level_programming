@@ -48,7 +48,7 @@ class Square(Rectangle):
             a = 0
             for arg in args:
                 if a == 0:
-                    self.id  = arg
+                    self.id = arg
                 elif a == 1:
                     self.size = arg
                 elif a == 2:
