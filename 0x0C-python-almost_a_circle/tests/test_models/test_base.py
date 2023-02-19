@@ -8,52 +8,6 @@ from models.rectangle import Rectangle
 from models.square import Square
 
 
-class test_Base(unittest.TestCase):
-    def test1_base_NoAttr(self):
-        """test base with no attribute: 2 instances"""
-        b1 = Base()
-        b2 = Base()
-        self.assertEqual(b1.id, 1)
-        self.assertEqual(b2.id, 2)
-
-    def test2_base_NoAttr(self):
-        """test base with None attribute: 2 new instances, 2 repeats"""
-        b1 = Base()
-        b2 = Base()
-        b3 = Base()
-        b4 = Base()
-        b5 = Base()
-        self.assertEqual(b1.id, 3)
-        self.assertEqual(b2.id, 4)
-        self.assertEqual(b3.id, 5)
-        self.assertEqual(b4.id, 6)
-        self.assertEqual(b5.id, 7)
-
-    def test3_base_WithAttr(self):
-        b1 = Base(12)
-        b2 = Base(14)
-        b2 = Base()
-        self.assertEqual(b1.id, 12)
-        self.assertEqual(b2.id, 8)
-        self.assertEqual(b2.id, 8)
-
-    def test4_base_list(self):
-        b1 = Base([1, 2, 4, 5])
-        self.assertEqual(b1.id, [1, 2, 4, 5])
-
-    def test4_base_tuple(self):
-        b1 = Base(("12", "Joe", "Male"))
-        self.assertEqual(b1.id, ("12", "Joe", "Male"))
-
-    def test4_base_string(self):
-        b1 = Base("Yes")
-        self.assertEqual(b1.id, "Yes")
-
-    def test4_base_dict(self):
-        b1 = Base({"Age": 12, "Name": "Joe", "Sex": "Male"})
-        self.assertEqual(b1.id, {"Age": 12, "Name": "Joe", "Sex": "Male"})
-
-
 class TestBase_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the Base class."""
 
