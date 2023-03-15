@@ -16,3 +16,4 @@ CREATE TABLE
     `name`     VARCHAR(256) NOT NULL,
     FOREIGN KEY(`state_id`)
     REFERENCES `hbtn_0d_usa`.`states`(`id`)
+    );
