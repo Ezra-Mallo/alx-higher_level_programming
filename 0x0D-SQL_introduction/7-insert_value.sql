@@ -1,2 +1,2 @@
--- Script that lists all rows of the table first_table from the database
+-- Script that inserts a new row in the table
 INSERT INTO `first_table` (`id`, `name`) VALUES (89, "Best School");
