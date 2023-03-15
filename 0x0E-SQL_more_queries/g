@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m "Task 0 - 18. (project 0x0E. SQL - More queries)"
+git push
