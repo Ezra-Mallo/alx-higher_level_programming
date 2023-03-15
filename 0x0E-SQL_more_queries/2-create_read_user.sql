@@ -11,6 +11,6 @@ CREATE USER
 GRANT PRIVILEGES SELECT
    ON `hbtn_0d_2.*`
    TO 'user_0d_2'@'localhost'
-   IDENTIFIED BY 'user_0d_2_pwd';
+   IDENTIFIED BY 'user_0d_2_pwd'
    WITH GRANT OPTION;
 FLUSH PRIVILEGES;
