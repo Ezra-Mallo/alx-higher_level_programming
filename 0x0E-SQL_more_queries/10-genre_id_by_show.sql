@@ -5,4 +5,4 @@
 -- The database name will be passed as an argument of the mysql command
 SELECT `cities`.`id`, `cities`.`name`, `states.name`
   FROM `cities`, `states`
-  ORDER BY `cities`.`id` ASC;
+  ORDER BY `cities`.`id`;
