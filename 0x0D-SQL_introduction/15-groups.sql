@@ -1,5 +1,5 @@
 -- Script that removes all records with a score <= 5 in second_table
-select `score`, count(*) as `number`
-from `second_table`
-group by `score`
-order by `score` DESC;
+SELECT `score`, count(*) as `number`
+FROM `second_table`
+GROUP BY `score`
+ORDER BY `score` DESC;
