@@ -3,5 +3,5 @@
 hat lists the number of records with the same score in second_table
 SELECT `score`, `name`
 FROM `second_table`
-WHERE `name` != ""
-ORDER BY `score` DESC
+WHERE `name` != NULL
+ORDER BY `score` DESC;
