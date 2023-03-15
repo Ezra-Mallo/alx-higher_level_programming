@@ -1,3 +1,3 @@
 -- Scripti that lists all records of the table second_of the databasei
 SELECT `score`, `name` FROM `second_table`
-ORDER BY `score`;
+ORDER BY `score` DESC;
