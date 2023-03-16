@@ -6,7 +6,7 @@
 -- You can use only one SELECT statement
 -- The database name will be passed as an argument of the mysql command
 SELECT a.title, b.genre_id
-    FROM tv_shows.title AS a
-    INNER JOIN tv_show_genres.genre_id AS b
+    FROM tv_shows AS a
+    INNER JOIN tv_show_genres AS b
     ON a.id = b.show_id
-    ORDER BY tv_shows.title as a, tv_show_genres.genre_id as b;
+    ORDER BY a.title, b.genre_id;
