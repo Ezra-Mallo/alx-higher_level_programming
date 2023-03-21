@@ -4,8 +4,7 @@
 -- Second column must be called number_of_shows
 -- Don’t display a genre that doesn’t have any shows linked
 -- Results must be sorted in descending order by the number of shows linked
--- You can use only one SELECT statement
--- The database name will be passed as an argument of the mysql command
+
 SELECT tv_shows.title as genre, count(tv_show_genres.genre_id) as number_of_shows
     FROM tv_shows
     LEFT JOIN tv_show_genres
