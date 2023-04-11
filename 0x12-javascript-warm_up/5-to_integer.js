@@ -10,12 +10,8 @@ Write a script that prints My number: <first argument converted in integer> if t
 const process = require('process');
 const myVar = process.argv;
 
-if (typeof (myVar[2]) !== 'undefined') {
-  const arg = parseInt(myVar[2]);
-
-  if ((typeof (arg === 'number')) || (arg !== 'NaN')) {
-    console.log('My number: ' + arg);
-  } else {
-    console.log('Not a number');
-  }
+if (parseInt(myVar[2])) {
+  console.log('My number: ' + parseInt(myVar[2]));
+} else {
+  console.log('Not a number');
 }
