@@ -9,10 +9,10 @@
  */
 
 const process = require('process');
-let myVar = process.argv;
-let varCount = myVar.length;
-if (varCount === 2){
-	console.log("No argument");
+const myVar = process.argv;
+const varCount = myVar.length;
+if (varCount === 2) {
+  console.log('No argument');
 } else {
-	console.log("Argument found");
+  console.log('Argument found');
 }
