@@ -9,11 +9,9 @@ Write a script that prints the first argument passed to it:
 
 const process = require('process');
 const myVar = process.argv;
-const varCount = myVar.length;
-if (varCount === 2) {
+
+if (typeof(myVar[2]) == "undefined") {
   console.log('No argument');
 } else {
-  for (let i = 2; i < varCount; i++) {
-    console.log(myVar[i]);
-  }
+  console.log(myVar[2]);
 }
