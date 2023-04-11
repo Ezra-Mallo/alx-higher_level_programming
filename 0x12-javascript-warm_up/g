@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "Task 3. Value of my argument"
+git commit -m "Task 4. Create a sentence"
 git push
