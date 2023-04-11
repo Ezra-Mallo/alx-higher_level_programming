@@ -6,7 +6,7 @@
    You must use the character X to print the square
    You must use console.log(...) to print all output
    You are not allowed to use var
-   You must use a loop (while, for, etc.) 
+   You must use a loop (while, for, etc.)
  */
 
 const process = require('process');
@@ -15,9 +15,9 @@ const myVar = process.argv;
 if (parseInt(myVar[2])) {
   const myNum = Number(myVar[2]);
   for (let i = 0; i < myNum; i++) {
-    let myStr = ""
-    for (let j = 0; j < myNum; j++){
-      myStr +="X"
+    let myStr = '';
+    for (let j = 0; j < myNum; j++) {
+      myStr += 'X';
     }
     console.log(myStr);
   }
