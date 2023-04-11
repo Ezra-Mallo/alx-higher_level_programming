@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "Task 5. An Integer"
+git commit -m "Task 6. Loop to languages"
 git push
