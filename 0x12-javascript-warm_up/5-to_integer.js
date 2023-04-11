@@ -11,7 +11,7 @@ const process = require('process');
 const myVar = process.argv;
 
 if (typeof (myVar[2]) !== 'undefined') {
-  arg = parseInt(myVar[2]);
+  const arg = parseInt(myVar[2]);
 
   if ((typeof (arg === 'number')) || (arg !== 'NaN')) {
     console.log('My number: ' + arg);
