@@ -13,6 +13,8 @@ const myVar = process.argv;
 const varCount = myVar.length;
 if (varCount === 2) {
   console.log('No argument');
-} else {
+} else if (varCount === 3) {
   console.log('Argument found');
+} else {
+  console.log('Arguments found');
 }
