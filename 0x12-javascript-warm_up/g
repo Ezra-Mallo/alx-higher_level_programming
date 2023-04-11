@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "Task 1. 3 languages."
+git commit -m "Task 2. Arguments"
 git push
