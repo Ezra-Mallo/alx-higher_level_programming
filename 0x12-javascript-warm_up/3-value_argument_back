@@ -17,3 +17,12 @@ if (varCount === 2) {
     console.log(myVar[i]);
   }
 }
+/*
+const process = require('process');
+var args = process.argv;
+console.log("number of arguments is "+args.length);
+args.forEach((val, index) => {
+    console.log(`${index}: ${val}`);
+});
+
+*/
