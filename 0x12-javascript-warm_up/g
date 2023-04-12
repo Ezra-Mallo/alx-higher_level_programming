@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "Task 15. Call me Moby updated"
+git commit -m "Task 17. Increment object"
 git push
