@@ -14,7 +14,7 @@ function factorial (n) {
 
   if (n < 0) {
     return (-1);
-  } else if ((n === 0) || (typeof (n) === 'NaN')) {
+  } else if ((n === 0) || (typeof (n) === 'undefined')) {
     return (1);
   } else {
     x = n * factorial(n - 1);
