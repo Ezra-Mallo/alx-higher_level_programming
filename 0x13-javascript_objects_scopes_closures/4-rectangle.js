@@ -34,14 +34,13 @@ class Rectangle {
     }
   }
 
- rotate () {
-    let newWidth = this.height;
-    let newHeight = this.width;
+  rotate () {
+    const newWidth = this.height;
+    const newHeight = this.width;
 
     this.height = newHeight;
-    this.width =  newWidth;
+    this.width = newWidth;
   }
-
 
   double () {
     const newWidth = this.width * 2;
