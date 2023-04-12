@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "Task 16. Add me maybe"
+git commit -m "Task 15. Call me Moby updated"
 git push
