@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "Task 10. Factorial"
+git commit -m "Task 13. Add file"
 git push
