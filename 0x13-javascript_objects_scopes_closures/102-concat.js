@@ -7,11 +7,12 @@
  */
 
 const fs = require('fs');
+const process = require('process');
 const readline = require('readline');
 
-const firstSrcFile = 'fileA';
-const secondSrcFile = 'fileB';
-const destFile = 'fileC';
+const firstSrcFile = process.argv[2];
+const secondSrcFile = process.argv[3];
+const destFile = process.argv[4];
 
 const inputStreamA = fs.createReadStream(firstSrcFile);
 const inputStreamB = fs.createReadStream(secondSrcFile);
