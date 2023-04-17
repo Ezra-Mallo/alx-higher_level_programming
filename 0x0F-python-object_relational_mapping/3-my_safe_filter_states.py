@@ -9,9 +9,11 @@ import MySQLdb
 if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", port=3306,
                          user=argv[1], passwd=argv[2], db=argv[3])
+    my_search = argv[4]
     db_cursor = db.cursor()
-    db_cursor.execute("SELECT * FROM states\
-                      WHERE binary name = '{}'".format(argv[4]))
+    my_query ="SELECT * FROM states WHERE name = %s"
+
+    db_cursor.execute(my_query, (my_search,))
     for state in db_cursor.fetchall():
         print(state)
     db.close()
