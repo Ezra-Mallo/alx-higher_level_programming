@@ -15,7 +15,7 @@ my_host = "localhost"
 if __name__ == "__main__":
     """    Connect to database, query and display states from the database."""
     db = MySQLdb.connect(host=my_host, port=my_port,
-                         user=argv[1], passwd=argv[2], db=argv[3])
+                         user=my_user, passwd=my_pswd, db=my_db)
 
     db_cursor = db.cursor()
     db_cursor.execute("SELECT * FROM `states`")
