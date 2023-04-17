@@ -11,7 +11,7 @@ if __name__ == "__main__":
                          user=argv[1], passwd=argv[2], db=argv[3])
     my_search = argv[4]
     db_cursor = db.cursor()
-    my_query ="SELECT * FROM states WHERE name = %s"
+    my_query = "SELECT * FROM states WHERE name = %s"
 
     db_cursor.execute(my_query, (my_search, ))
     for state in db_cursor.fetchall():
