@@ -11,9 +11,7 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", port=3306,
                          user=argv[1], passwd=argv[2], db=argv[3])
     db_cursor = db.cursor()
-    my_query = "SELECT * FROM cities ORDER BY cities.id"
-
-    db_cursor.execute(my_query)
+    db_cursor.execute("SELECT * FROM cities ORDER BY cities.id")
     for state in db_cursor.fetchall():
         print(state)
     db.close()
