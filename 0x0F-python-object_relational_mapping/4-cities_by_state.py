@@ -14,4 +14,5 @@ if __name__ == "__main__":
                       WHERE binary name = '{}'".format(argv[4]))
     for state in db_cursor.fetchall():
         print(state)
+
     db.close()
