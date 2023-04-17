@@ -18,7 +18,7 @@ if __name__ == "__main__":
                          user=my_user, passwd=my_pswd, db=my_db)
     db_cursor = db.cursor()
     db_cursor.execute("SELECT * FROM states WHERE name LIKE 'N%'\
-                      ORDER BY 'id'")
+                      ORDER BY 'states.id'")
 
     for state in db_cursor.fetchall():
         print(state)
