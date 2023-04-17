@@ -6,18 +6,15 @@
 from sys import argv
 import MySQLdb
 
-my_user = argv[1]
-my_pswd = argv[2]
-my_db = argv[3]
-my_match = argv[4]
 my_port = 3306
 my_host = "localhost"
 
 if __name__ == "__main__":
+    """    Connect to database, query and display states from the database."""
     db = MySQLdb.connect(host=my_host, port=my_port,
-                         user=my_user, passwd=my_pswd, db=my_db)
+                         user=argv[1], passwd=argv[2], db=argv[3])
     db_cursor = db.cursor()
-    db_cursor.execute("SELECT * FROM states WHERE name = '{}'".format(my_match))
+    db_cursor.execute("SELECT * FROM states WHERE name = '{}'".format(argv[4]))
 
     for state in db_cursor.fetchall():
-        print(state)
+                      print(state)
