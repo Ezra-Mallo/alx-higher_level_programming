@@ -1,31 +1,17 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+"""A script that takes in an argument and displays all values in the states
+   table of hbtn_0e_0_usa where name matches the argument.
+   Script takes 3 arguments(mysql username, mysql password & database name"""
+
+from sys import argv
 import MySQLdb
-import sys
 
-if __name__ == '__main__':
-    mysql_username = sys.argv[1]
-    mysql_password = sys.argv[2]
-    db_name = sys.argv[3]
-    state_name = sys.argv[4]
-
-    # Establish a connection to the database
-    db = MySQLdb.connect(host="localhost", port=3306, user=mysql_username, passwd=mysql_password, db=db_name)
-
-    # Create a cursor object to execute SQL queries
-    cursor = db.cursor()
-
-    # Prepare the SQL query with a parameterized query to prevent SQL injection attacks
-    query = "SELECT * FROM states WHERE name = %s"
-
-    # Execute the SQL query with the state_name argument as a parameter
-    cursor.execute(query, (state_name,))
-
-    # Fetch all the rows from the result set
-    rows = cursor.fetchall()
-
-    # Print the results
-    for row in rows:
-        print(row)
-
-    # Close the database connection
+if __name__ == "__main__":
+    db = MySQLdb.connect(host="localhost", port=3306,
+                         user=argv[1], passwd=argv[2], db=argv[3])
+    db_cursor = db.cursor()
+    db_cursor.execute("SELECT * FROM states\
+                      WHERE binary name = '{}'".format(argv[4]))
+    for state in db_cursor.fetchall():
+        print(state)
     db.close()
