@@ -13,7 +13,7 @@ if __name__ == "__main__":
     db_cursor = db.cursor()
     my_query = "SELECT * FROM states WHERE name = %s"
 
-    db_cursor.execute(my_query, (my_search,  ))
+    db_cursor.execute(my_query, (my_search, ))
     for state in db_cursor.fetchall():
         print(state)
     db.close()
