@@ -19,5 +19,6 @@ if __name__ == "__main__":
             ORDER BY cities.id"
     db_cursor.execute(my_query, (my_search, ))
     for state in db_cursor.fetchall():
-        print(state, end=",")
+        print(state, end=" ")
+    print("\n")
     db.close()
