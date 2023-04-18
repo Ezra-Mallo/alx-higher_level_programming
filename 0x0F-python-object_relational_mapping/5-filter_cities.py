@@ -14,7 +14,8 @@ if __name__ == "__main__":
     db_cursor.execute("SELECT c.name FROM cities AS c\
                       INNER JOIN states AS s\
                       ON c.state_id = s.id\
-                      WHERE BINARY s.name ='{}' ORDER BY c.id".format(argv[4]))
+                      WHERE s.name LIKE BINARY '{}'\
+                      ORDER BY c.id".format(argv[4]))
     for state in db_cursor.fetchall():
         print(state, end=",")
     db.close()
