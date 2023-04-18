@@ -17,5 +17,5 @@ if __name__ == "__main__":
                       WHERE states.name = '{}'\
                       ORDER BY cities.id ASC".format(my_search))
     for state in db_cursor.fetchall():
-        print(state)
+        print(state, end=",")
     db.close()
