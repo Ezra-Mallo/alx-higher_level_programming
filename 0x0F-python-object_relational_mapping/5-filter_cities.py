@@ -18,7 +18,6 @@ if __name__ == "__main__":
             WHERE states.name LIKE BINARY %s\
             ORDER BY cities.id"
     db_cursor.execute(my_query, (my_search, ))
-    for state in db_cursor.fetchall():
-        print(state, end=" ")
-    print("\n")
-    db.close()
+    result = list(db_cursor.fetchall())
+    for cities in result:
+        print(cities[0], end=", ")
