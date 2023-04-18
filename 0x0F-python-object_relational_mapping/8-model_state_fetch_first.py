@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""
-This script defines a State class and
-a Base class to work with MySQLAlchemy ORM.
-"""
+""" This script calls the object Base state and makes a session to
+query the Base classi to dislay first record. It wgrk with MySQLAlchemy ORM."""
+
 import sys
 from model_state import Base, State
 from sqlalchemy import (create_engine)
