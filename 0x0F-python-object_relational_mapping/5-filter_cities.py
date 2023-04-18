@@ -27,5 +27,3 @@ if __name__ == "__main__":
         else:
             print(cities[0])
         i += 1
-
-
