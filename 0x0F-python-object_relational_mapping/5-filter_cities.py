@@ -8,14 +8,13 @@ from sys import argv
 import MySQLdb
 
 if __name__ == "__main__":
-    my_search = argv[4]
     db = MySQLdb.connect(host="localhost", port=3306,
                          user=argv[1], passwd=argv[2], db=argv[3])
     db_cursor = db.cursor()
-    db_cursor.execute("SELECT cities.name FROM cities\
-                      INNER JOIN states ON cities.state_id = states.id\
-                      WHERE states.name = '{}'\
-                      ORDER BY cities.id ASC".format(my_search))
+    db_cursor.execute("SELECT c.name FROM cities AS c\
+                      INNER JOIN states AS s\
+                      ON c.state_id = s.id\
+                      WHERE BINARY s.name ='{}' ORDER BY c.id".format(argv[4]))
     for state in db_cursor.fetchall():
         print(state, end=",")
     db.close()
