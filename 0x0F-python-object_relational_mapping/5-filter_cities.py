@@ -12,11 +12,9 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", port=3306,
                          user=argv[1], passwd=argv[2], db=argv[3])
     db_cursor = db.cursor()
-    my_query = "SELECT cities.name\
-            FROM cities\
+    my_query = "SELECT cities.name FROM cities\
             INNER JOIN states ON cities.state_id = states.id\
-            WHERE states.name = %s\
-            ORDER BY cities.id"
+            WHERE states.name = %s ORDER BY cities.id"
     db_cursor.execute(my_query, (my_search, ))
     result = list(db_cursor.fetchall())
     count = len(result)
