@@ -19,5 +19,13 @@ if __name__ == "__main__":
             ORDER BY cities.id"
     db_cursor.execute(my_query, (my_search, ))
     result = list(db_cursor.fetchall())
+    count = len(result)
+    i = 1
     for cities in result:
-        print(cities[0], end=", ")
+        if (i < count):
+            print(cities[0], end=", ")
+        else:
+            print(cities[0])
+        i += 1
+
+
