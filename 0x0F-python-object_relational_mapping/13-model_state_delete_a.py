@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" This script that changes the name of a State object from the database
-hbtn_0e_6_usa"""
+"""This script deletes all State objects with a name containing the
+letter a from the database hbtn_0e_6_usa"""
 
 import sys
 from model_state import Base, State
@@ -15,9 +15,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
 
     my_session = Session()
-    my_query = my_session.query(State).filter(State.id == 2)
-
-    if my_query.count() != 0:
-        for state in my_query:
-            state.name = "New Mexico"
-            my_session.commit()
+    my_query = my_session.query(State).filter(State.name.like('%a%'))
+    my_query.delete()
+    my_session.commit()
