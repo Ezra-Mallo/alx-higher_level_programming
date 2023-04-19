@@ -19,3 +19,4 @@ if __name__ == "__main__":
     if my_query.count() >= 1:
         my_query.delete()
     my_session.commit()
+    my_session.close()
