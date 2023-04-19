@@ -16,6 +16,6 @@ if __name__ == "__main__":
 
     my_session = Session()
     my_query = my_session.query(State).filter(State.name.like('%a%'))
-    if my_query.count >=1:
+    if my_query.count() >= 1:
         my_query.delete()
     my_session.commit()
