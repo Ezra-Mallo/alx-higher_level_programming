@@ -16,7 +16,8 @@ if __name__ == "__main__":
     my_session = Session()
     my_query = my_session.query(State).filter(State.name == sys.argv[4])
 
-    if my_query.count() < 1:
+
+    if my_query.count() is None:
         print("Nothing found")
     else:
         for state in my_query.all():
