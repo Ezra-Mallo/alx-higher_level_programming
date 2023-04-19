@@ -8,13 +8,9 @@ from sys import argv
 import MySQLdb
 
 if __name__ == "__main__":
-    """This script that takes in 3 arguments and displays all values
-    in the states"""
-
     my_search = argv[4]
     db = MySQLdb.connect(host="localhost", port=3306,
                          user=argv[1], passwd=argv[2], db=argv[3])
-    name = Column(String(128), nullable=False)
     db_cursor = db.cursor()
     my_query = "SELECT cities.name FROM cities\
             INNER JOIN states ON cities.state_id = states.id\
