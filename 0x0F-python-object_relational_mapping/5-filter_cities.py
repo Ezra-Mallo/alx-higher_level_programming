@@ -18,10 +18,11 @@ if __name__ == "__main__":
     db_cursor.execute(my_query, (my_search, ))
     result = list(db_cursor.fetchall())
     count = len(result)
-    i = 1
-    for cities in result:
-        if (i < count):
-            print(cities[0], end=", ")
-        else:
-            print(cities[0])
-        i += 1
+    if count >= 1:
+        i = 1
+        for cities in result:
+            if (i < count):
+                print(cities[0], end=", ")
+            else:
+                print(cities[0])
+            i += 1
