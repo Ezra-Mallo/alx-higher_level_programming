@@ -8,17 +8,16 @@ from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
-    my_search = argv[4]
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                            .format(sys.argv[1], sys.argv[2], sys.argv[3]),
                            pool_pre_ping=True)
 
     Session = sessionmaker(bind=engine)
     my_session = Session()
-    my_query = my_session.query(State).filter(State.name == argv[4])
-    .order_by(State.id)
-    if my_query.count() is None:
+    my_query = my_session.query(State).filter(State.name == sys.argv[4])
+
+    if my_query.count() < 1:
         print("Nothing found")
     else:
         for state in my_query.all():
-            print("{}: {}".format(state.id))
+            print("{}".format(state.id))
