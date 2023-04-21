@@ -9,7 +9,7 @@ from model_state import Base, State
 
 if __name__ == "__main__":
     """Setting up the session engine"""
-    if len(argv) <= 4:
+    if len(argv) == 4:
         engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
                                .format(argv[1], argv[2], argv[3]),
                                pool_pre_ping=True)
