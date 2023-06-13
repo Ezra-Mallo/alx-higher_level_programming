@@ -6,14 +6,4 @@ Write a script that prints two arguments passed to it, in the following format: 
  */
 
 const process = require('process');
-const myVar = process.argv;
-let arg1 = 'undefined';
-let arg2 = 'undefined';
-
-if (typeof (myVar[2]) !== 'undefined') {
-  arg1 = myVar[2];
-}
-if (typeof (myVar[3]) !== 'undefined') {
-  arg2 = myVar[3];
-}
-console.log(arg1 + ' is ' + arg2);
+console.log(process.argv[2] + ' is ' + process.argv[3]);
