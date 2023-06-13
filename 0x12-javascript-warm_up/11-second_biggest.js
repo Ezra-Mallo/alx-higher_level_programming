@@ -12,7 +12,6 @@ You are not allowed to use var
 const process = require('process');
 const argLength = process.argv.length;
 
-console.log(argLength);
 if (argLength <= 3) {
   console.log('0');
 } else {
@@ -21,6 +20,5 @@ if (argLength <= 3) {
     myList.push(parseInt(process.argv[i]));
     myList.sort((a, b) => a - b);
   }
-  console.log(myList);
   console.log(myList[myList.length - 2]);
 }
