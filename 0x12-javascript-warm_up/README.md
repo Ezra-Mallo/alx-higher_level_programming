@@ -1,7 +1,7 @@
 <h1 align="center"> 0x12. JavaScript - Warm up </h1>
 <p align ="center">
-<img src="https://github.com/Ezra-Mallo/alx-higher_level_programming/0x12-javascript-warm_up/blob/master/images/Javascript-535.png"
-	    alt="Javascript">
+<img src="https://github.com/Ezra-Mallo/alx-higher_level_programming/blob/main/0x12-javascript-warm_up/images/Javascript-535.png"
+alt="Javascript">
 </p>
 
 
