@@ -7,7 +7,6 @@
    You must use console.log(...) to print all output
    You are not allowed to use var
  */
-
 let myVar = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 myVar.forEach(myVar => {
   console.log(myVar);
