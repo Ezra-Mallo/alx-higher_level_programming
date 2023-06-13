@@ -10,16 +10,15 @@ You are not allowed to use var
  */
 
 const process = require('process');
-let num = 0;
 const argLength = process.argv.length;
 
 if (argLength < 3) {
   console.log('0');
 } else {
+  const myList = [];
   for (let i = 3; i < argLength; i++) {
-    if (parseInt(process.argv[i]) > num) {
-      num = process.argv[i];
-    }
+    myList.push(parseInt(process.argv[i]));
+    myList.sort((a, b) => a - b);
   }
-  console.log(num);
+  console.log(myList[myList.length - 2]);
 }
