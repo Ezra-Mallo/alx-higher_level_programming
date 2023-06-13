@@ -7,10 +7,8 @@
    You must use console.log(...) to print all output
    You are not allowed to use var
  */
+let myList = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-let myVar = 'C is fun';
-console.log(myVar);
-myVar = 'Python is cool';
-console.log(myVar);
-myVar = 'JavaScript is amazing';
-console.log(myVar);
+myList.forEach(list => {
+  console.log(list);
+});
