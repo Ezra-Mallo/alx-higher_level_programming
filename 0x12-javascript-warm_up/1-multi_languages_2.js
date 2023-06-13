@@ -8,5 +8,8 @@
    You are not allowed to use var
  */
 
-let myVar = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
-console.log(myVar[0],'\n', myVar[1], '\n', myVar[2]);
+let myVar = ["C is fun", "Python is cool", "JavaScript is amazing"];
+
+myVar.forEach(myVar => {
+  console.log(myVar);
+});
