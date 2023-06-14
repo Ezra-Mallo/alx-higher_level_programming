@@ -22,4 +22,3 @@ Inheritance in JavaScript
 Closures
 this/self
 Modern JS
-Learning Obj
