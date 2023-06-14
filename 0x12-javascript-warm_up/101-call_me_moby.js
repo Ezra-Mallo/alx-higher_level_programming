@@ -10,6 +10,6 @@ exports.callMeMoby = function callMeMoby (x, theFunction) {
   if (x > 0) {
     console.log('C is fun');
     x = x - 1;
-    callMeMoby(x, callMeMoby)
+    callMeMoby(x, theFunction);
   }
 };
