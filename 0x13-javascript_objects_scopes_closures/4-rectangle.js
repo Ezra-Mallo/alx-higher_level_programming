@@ -31,16 +31,17 @@ class Rectangle {
     }
   }
 
+  // rotate method
+  rotate () {
+    const num = this.height;
+    this.height = this.width;
+    this.width = num;
+  }
+
   // double method
   double () {
     this.width = this.width * 2;
     this.height = this.height * 2;
-  }
-
-  // rotate method
-  rotate () {
-    this.width = this.height;
-    this.height = this.width;
   }
 }
 
