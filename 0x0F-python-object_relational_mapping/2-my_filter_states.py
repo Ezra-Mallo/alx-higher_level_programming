@@ -25,5 +25,3 @@ if __name__ == "__main__":
                       ORDER BY id".format(argv[4]))
     for state in db_cursor.fetchall():
         print(state)
-    for state in db_cursor.fetchall():
-        print(state)
