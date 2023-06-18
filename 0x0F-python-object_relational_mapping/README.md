@@ -2,6 +2,8 @@
 <p align ="center">
 <img src="https://github.com/Ezra-Mallo/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/images/SQLAlchemy.jpg"
 alt="SQLAlchemy">
+</p>
+<p>
 <img src="https://github.com/Ezra-Mallo/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/images/MySQL.jpg"
 alt="MySQL">
 </p>
