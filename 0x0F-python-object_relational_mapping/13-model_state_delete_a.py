@@ -1,15 +1,14 @@
 #!/usr/bin/python3
-"""A script that changes the name of a State object from the database
-   hbtn_0e_6_usa
+"""A script that deletes all State objects with a name containing the letter
+   a from the database hbtn_0e_6_usa
 
-   * Your script should take 3 arguments: mysql username, mysql password
-     and database name
+   * Your script should take 3 arguments: mysql username, mysql password and
+     database name
    * You must use the module SQLAlchemy
    * You must import State and Base from model_state - from model_state
      import Base, State
-   * Your script should connect to a MySQL server running on localhost at port
-     3306
-   * Change the name of the State where id = 2 to New Mexico
+   * Your script should connect to a MySQL server running on localhost at
+     port 3306
    * Your code should not be executed when imported
 """
 from sys import argv
@@ -26,13 +25,13 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=db_engine)
     my_session = Session()
 
-    my_query = my_session.query(State).filter(State.id == 2)
-    if my_query.count() != 0:
-        for state in my_query:
-            state.name = "New Mexico"
-            my_session.commit()
+    my_query = my_session.query(State).filter(State.name.like('%a%')).all()
 
-    my_session.commit()
+    if my_query:
+        # delete query
+        for state in my_query:
+            my_session.delete(state)
+        my_session.commit()
 
     my_session.close()
     db_engine.dispose()
