@@ -32,6 +32,3 @@ if __name__ == "__main__":
 
     my_session.close()
     db_engine.dispose()
-    
-    
-    
