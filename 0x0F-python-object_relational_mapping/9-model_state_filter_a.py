@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""A script that prints the first State object from the database hbtn_0e_6_usa
+"""A script that lists all State objects that contain the letter a from the
+   database hbtn_0e_6_usa
 
    * Your script should take 3 arguments: mysql username, mysql password and
      database name
@@ -8,11 +9,8 @@
      Base, State
    * Your script should connect to a MySQL server running on localhost at port
      3306
-   * The state you display must be the first in states.id
-   * You are not allowed to fetch all states from the database before
-     displaying the result
+   * Results must be sorted in ascending order by states.id
    * The results must be displayed as they are in the example below
-   * If the table states is empty, print Nothing followed by a new line
    * Your code should not be executed when imported
 """
 from sys import argv
@@ -28,7 +26,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=db_engine)
     my_session = Session()
 
-    my_state_query = my_session.query(State).order_by(State.id).first()
+    my_state_query = my_session.query(State).filter(State.name.like('%a%'))\
+                               .order_by(State.id).first()
     if my_state_query:
         print("{}: {}".format(my_state_query.id, my_state_query.name))
     else:
