@@ -20,8 +20,12 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", port=3306,
                          user=argv[1], password=argv[2], database=argv[3])
     db_cursor = db.cursor()
-    query = "SELECT a.id, a.name, b.name FROM `cities` as a\
-            LEFT JOIN states as b ON a.id = b.id"
+    query = "SELECT a.id, a.name, b.name\
+            FROM `cities` as a\
+            INNER JOIN states as b\
+            ON a.state_id = b.id\
+            ORDER BY a.id ASC"
+
     db_cursor.execute(query)
     result = db_cursor.fetchall()
     for cities in result:
