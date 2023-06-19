@@ -22,5 +22,17 @@ In the second part, you will use the module SQLAlchemy (don’t ask me how to pr
 
 The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is to abstract the storage to the usage. With an ORM, your biggest concern will be “What can I do with my objects” and not “How this object is stored? where? when?”. You won’t write any SQL queries only Python code. Last thing, your code won’t be “storage type” dependent. You will be able to change your storage easily without re-writing your entire project.
 
-Without ORM:
+
+###How to run the sql
+    $ cat <sql_file_name.sql> | sudo mysql -uroot -p
+        example: to execute the sql script in "0-select_stgate.sql"
+            $ cat 0-select_states.sql | mysql -uroot -p
+
+###How to run the orm file
+    $ ./<python_orm_file_name.py> root root <database_name> 
+        example: to execute the sql script in "0-select_stgate.sql"
+            $ ./0-select_states.py root root hbtn_0e_0_usa
+
+
+
 
