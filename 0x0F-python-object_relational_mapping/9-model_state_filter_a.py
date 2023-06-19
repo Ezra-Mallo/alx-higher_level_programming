@@ -26,13 +26,10 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=db_engine)
     my_session = Session()
-
     my_state_query = my_session.query(State).filter(State.name.like('%a%'))\
                                .order_by(State.id).all()
     for state in my_state_query:
         print("{}: {}".format(state.id, state.name))
-    else:
-        print("Nothing")
 
     my_session.close()
     db_engine.dispose()
