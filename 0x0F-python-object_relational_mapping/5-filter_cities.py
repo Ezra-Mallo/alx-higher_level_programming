@@ -23,10 +23,8 @@ if __name__ == "__main__":
                          user=argv[1], password=argv[2], database=argv[3])
     db_cursor = db.cursor()
     my_query = "SELECT cities.name FROM cities\
-            INNER JOIN states\
-            ON cities.state_id = states.id\
-            WHERE states.name = %s\
-            ORDER BY cities.id ASC"
+                INNER JOIN states ON cities.state_id = states.id\
+                WHERE states.name = %s ORDER BY cities.id"
     my_search = argv[4]
 
     db_cursor.execute(my_query, (my_search, ))
