@@ -34,7 +34,10 @@ if __name__ == "__main__":
 
     for cities in result:
         my_list.append(cities[0])
-    print(my_list)
+    if (len(my_list) != 0):
+        print(", ".join(my_list))
+    else:
+        print()
 
     db_cursor.close()
     db.close()
