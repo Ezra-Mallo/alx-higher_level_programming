@@ -26,9 +26,12 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=db_engine)
     my_session = Session()
 
-    my_state_query = my_session.query(State).filter(State.id == '2')
+    my_query = my_session.query(State).filter(State.id == 2)
     my_state_query.name = "New Mexico"
     my_session.commit()
 
     my_session.close()
     db_engine.dispose()
+    
+    
+    
