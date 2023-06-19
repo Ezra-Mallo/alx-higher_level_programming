@@ -27,7 +27,11 @@ if __name__ == "__main__":
     my_session = Session()
 
     my_query = my_session.query(State).filter(State.id == 2)
-    my_query.name = "New Mexico"
+    if my_query.count() != 0:
+        for state in my_query:
+            state.name = "New Mexico"
+            my_session.commit()
+            
     my_session.commit()
 
     my_session.close()
