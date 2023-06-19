@@ -28,11 +28,12 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=db_engine)
     my_session = Session()
 
-    my_state_query = my_session.query(State).filter().first()
+    my_state_query = my_session.query(State).order_by(State.id).first()
     if my_state_query:
         print("{}: {}".format(my_state_query.id, my_state_query.name))
     else:
-        print("Nothing\n")
+        print("Nothing")
+
 
     my_session.close()
     db_engine.dispose()
