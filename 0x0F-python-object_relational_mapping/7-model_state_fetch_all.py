@@ -1,5 +1,17 @@
 #!/usr/bin/python3
-"""Start link class to table in database """
+"""A script that lists all State objects from the database hbtn_0e_6_usa
+
+    * Your script should take 3 arguments: mysql username, mysql password and
+      database name
+    * You must use the module SQLAlchemy
+    * You must import State and Base from model_state - from model_state import
+      Base, State
+    * Your script should connect to a MySQL server running on localhost at port
+      3306
+    * Results must be sorted in ascending order by states.id
+    * The results must be displayed as they are in the example below
+    * Your code should not be executed when imported
+"""
 from sys import argv
 from model_state import Base, State
 from sqlalchemy import create_engine
@@ -13,7 +25,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=db_engine)
     my_session = Session()
 
-    for state in my_session.query(State).order_by(State.id):
+    my_query = my_session.query(State).order_by(State.id)
+    for state in my_query:
         print("{}: {}".format(state.id, state.name))
 
     my_session.close()
