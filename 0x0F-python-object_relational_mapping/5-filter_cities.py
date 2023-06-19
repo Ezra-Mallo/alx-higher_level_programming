@@ -30,8 +30,11 @@ if __name__ == "__main__":
     db_cursor.execute(my_query, (my_search, ))
     result = db_cursor.fetchall()
 
+    my_list = []
+
     for cities in result:
-        print(cities)
+        my_list.append(cities[0])
+    print(my_list)
 
     db_cursor.close()
     db.close()
