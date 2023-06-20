@@ -5,7 +5,7 @@
 alt="mySQL">
 </p>
 <p>
-<img src="https://github.com/Ezra-Mallo/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/images/MySQL.jpg"
+<img src="https://github.com/Ezra-Mallo/alx-higher_level_programming/blob/main/0x0D-SQL_introduction/images/MySQL.jpg"
 alt="MySQL">
 </p>
 
