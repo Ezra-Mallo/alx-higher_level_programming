@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 0-square-py
+# 3-square-py
 # ezra.malo@gmail.com
 """Define Square class"""
 

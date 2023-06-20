@@ -2,7 +2,6 @@
 """This class makes reference to Base model of City)"""
 
 from sys import argv
-from model_city import City
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from model_state import Base, State

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 10-square.py
+# 11-square.py
 # ezra.mallo@gmail.com
 """ Defines the instance of square"""
 Rectangle = __import__('9-rectangle').Rectangle
