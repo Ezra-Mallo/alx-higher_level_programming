@@ -7,6 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from model_state import Base, State
 
+
 if __name__ == "__main__":
     """Setting up the session engine"""
     if len(argv) == 4:
