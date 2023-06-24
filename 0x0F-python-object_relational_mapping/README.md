@@ -61,7 +61,6 @@ Do you see the difference? Cool, right?
 
 The biggest difficulty with ORM is: The syntax!
 
-<<<<<<< HEAD
 ## Resources read or watch:
 
 * [Object-relational mappers]
@@ -126,10 +125,10 @@ $
 
 In the container, credentials are root/root
 
-* * Ask for container Ubuntu 20.04
-* * Connect via SSH
-* *OR connect via the Web terminal
-* * In the container, you should start MySQL before playing with it:
+* Ask for container Ubuntu 20.04
+* Connect via SSH
+* OR connect via the Web terminal
+* In the container, you should start MySQL before playing with it:
 ```
 
 $ service mysql start                                                   
@@ -144,7 +143,7 @@ sys
 $
 In the container, credentials are root/root
 ```
-=======
+
 Indeed, all of them have the same type of syntax, but not always. Please read tutorials and don’t read the entire documentation before starting, just jump on it if you don’t get something.
 ## Resources read or watch:
 
@@ -160,4 +159,3 @@ Indeed, all of them have the same type of syntax, but not always. Please read tu
 * [Python SQLAlchemy Cheatsheet](https://www.pythonsheets.com/notes/python-sqlalchemy.html)
 * [SQLAlchemy ORM Tutorial for Python Developers (Warning: This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL)](https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/)
 * [SQLAlchemy Tutorial](https://overiq.com/sqlalchemy-101/)
->>>>>>> c4d6fb56fbb540640ac5711baf7b8aff4a0496a1
