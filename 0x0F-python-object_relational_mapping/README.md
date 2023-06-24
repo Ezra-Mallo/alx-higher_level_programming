@@ -10,7 +10,6 @@ alt="MySQL">
 
 
 
-
 ## Python | OOP | SQL | MySQL | ORM | SQLAlchemy
 
 ## Background Context
