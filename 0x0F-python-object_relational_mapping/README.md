@@ -22,18 +22,47 @@ In the second part, you will use the module SQLAlchemy (don’t ask me how to pr
 
 The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is to abstract the storage to the usage. With an ORM, your biggest concern will be “What can I do with my objects” and not “How this object is stored? where? when?”. You won’t write any SQL queries only Python code. Last thing, your code won’t be “storage type” dependent. You will be able to change your storage easily without re-writing your entire project.
 
+### Without ORM:
+```
+conn = MySQLdb.connect(host="localhost", port=3306, user="root", passwd="root", db="my_db", charset="utf8")
+cur = conn.cursor()
+cur.execute("SELECT * FROM states ORDER BY id ASC") # HERE I have to know SQL to grab all states in my database
+query_rows = cur.fetchall()
+for row in query_rows:
+    print(row)
+cur.close()
+conn.close()
+```
 
-###How to run the sql
+### With an ORM:
+```
+engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format("root", "root", "my_db"), pool_pre_ping=True)
+Base.metadata.create_all(engine)
+
+session = Session(engine)
+for state in session.query(State).order_by(State.id).all(): # HERE: no SQL query, only objects!
+    print("{}: {}".format(state.id, state.name))
+session.close()
+```
+
+
+### How to run the sql
+'''
     $ cat <sql_file_name.sql> | sudo mysql -uroot -p
         example: to execute the sql script in "0-select_stgate.sql"
             $ cat 0-select_states.sql | mysql -uroot -p
-
-###How to run the orm file
+'''
+### How to run the orm file
+'''
     $ ./<python_orm_file_name.py> root root <database_name> 
         example: to execute the sql script in "0-select_stgate.sql"
             $ ./0-select_states.py root root hbtn_0e_0_usa
+'''
+Do you see the difference? Cool, right?
 
+The biggest difficulty with ORM is: The syntax!
 
+Indeed, all of them have the same type of syntax, but not always. Please read tutorials and don’t read the entire documentation before starting, just jump on it if you don’t get something.
 ## Resources read or watch:
 
 * [Object-relational mappers](https://www.fullstackpython.com/object-relational-mappers-orms.html)
