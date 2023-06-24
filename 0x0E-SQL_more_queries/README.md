@@ -2,11 +2,11 @@
 <h1 align="center"> 0x0E. SQL - More queries </h1>
 <p align ="center">
 
-<img src="https://github.com/Ezra-Mallo/alx-higher_level_programming/blob/main/0x0E-SQL_more_queries/images/mySQL.jpg"
+<img src="https://github.com/Ezra-Mallo/alx-higher_level_programming/blob/main/0x0E-SQL_more_queries/images/MySQL.jpg"
 alt="mySQL">
 </p>
 <p>
-<img src="https://github.com/Ezra-Mallo/alx-higher_level_programming/blob/main/0x0E-SQL_more_queries/images/MySQL.jpg"
+<img src="https://github.com/Ezra-Mallo/alx-higher_level_programming/blob/main/0x0E-SQL_more_queries/images/MySQL2.jpg"
 alt="MySQL">
 </p>
 ## SQL | MySQL
