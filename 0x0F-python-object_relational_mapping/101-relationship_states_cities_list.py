@@ -22,10 +22,4 @@ if __name__ == "__main__":
         # because of the relationship between state and city table
         # we can get all the cities associated with a state
         for city in state.cities:
-            print("\t{}: {}".format(city.id, city.name))
-
-
-    """for state in session.query(State).order_by(State.id):
-        print("{}: {}".format(state.id, state.name))
-        for city in state.cities:
-            print("    {}: {}".format(city.id, city.name))"""
+            print("    {}: {}".format(city.id, city.name))
