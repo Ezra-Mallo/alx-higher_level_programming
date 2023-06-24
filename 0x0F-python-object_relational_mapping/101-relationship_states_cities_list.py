@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 from sys import argv
-from relationship_city import City, State, Base
-from sqlalchemy.orm.session import sessionmaker
-from sqlalchemy.engine import create_engine
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from relationship_city import City, State
 import sys
 
 
@@ -23,3 +23,9 @@ if __name__ == "__main__":
         # we can get all the cities associated with a state
         for city in state.cities:
             print("\t{}: {}".format(city.id, city.name))
+
+
+    """for state in session.query(State).order_by(State.id):
+        print("{}: {}".format(state.id, state.name))
+        for city in state.cities:
+            print("    {}: {}".format(city.id, city.name))"""
