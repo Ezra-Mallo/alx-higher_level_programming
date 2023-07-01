@@ -19,7 +19,6 @@ Usage: curl [options...] <url>
 ```
 curl -a -o output.txt www.malloshub.com
 ```
-
 * This command retrieves the content from www.malloshub.com and appends it to the file "output.txt" without overwriting any existing content.
 
 
@@ -28,16 +27,18 @@ curl -a -o output.txt www.malloshub.com
 
 ```
 curl --basic -u username:password www.malloshub.com
-This command sends an HTTP request to www.malloshub.com with the provided username and password for basic authentication.
 ```
+* This command sends an HTTP request to www.malloshub.com with the provided username and password for basic authentication.
+
 
 ### --cacert:
 * The --cacert option is used to specify a CA certificate file for SSL/TLS verification.
 
 ```
 curl --cacert /path/to/cert.pem https://www.malloshub.com
-This command connects to www.malloshub.com using HTTPS and verifies the server's SSL/TLS certificate against the provided CA certificate file.
 ```
+* This command connects to www.malloshub.com using HTTPS and verifies the server's SSL/TLS certificate against the provided CA certificate file.
+
 
 ### --capath:
 * The --capath option is used to specify a directory containing multiple CA certificates for SSL/TLS verification.
