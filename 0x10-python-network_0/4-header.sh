@@ -1,5 +1,3 @@
 #!/bin/bash
-# Script that sends GET request to the URL and displays the body of the response
-# A header variable X-School-User-Id must be sent with the value 98
+# Script that sends GET request and set header variable X-School-User-Id = 98
 curl -sH "X-School-User-Id: 98" "$1"
-
