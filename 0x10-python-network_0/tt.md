@@ -1,10 +1,31 @@
-Usage: curl [options...] <url>
+### Usage: curl [options...] <url>
+### Let assume <url> to be www.malloshub.com:
+
+```
      --abstract-unix-socket <path> Connect via abstract Unix domain socket
      --alt-svc <file name> Enable alt-svc with this cache file
      --anyauth       Pick any authentication method
+```
 
 
-* Let assume URL to be www.malloshub.com:
+### --abstract-unix-socket <path>: Connect via an abstract Unix domain socket.
+```
+curl --abstract-unix-socket /path/to/socket http://www.malloshub.com
+```
+* This command connects to http://www.malloshub.com using an abstract Unix domain socket located at /path/to/socket.
+
+###  --alt-svc <file name>: Enable Alternative Services (alt-svc) with the specified cache file.
+```
+curl --alt-svc cache.txt http://www.malloshub.com
+```
+* This command enables Alternative Services (alt-svc) using the cache file cache.txt when making a request to http://www.malloshub.com.
+
+### --anyauth: Pick any authentication method.
+```
+curl --anyauth -u username:password http://www.malloshub.com
+```
+* This command sends a request to http://www.malloshub.com using any available authentication method with the provided username and password.
+
 
 ```
 -a, --append        Append to target file when uploading
@@ -47,6 +68,7 @@ curl --cacert /path/to/cert.pem https://www.malloshub.com
 curl --capath /path/to/certs https://www.malloshub.com
 ```
 * This command connects to www.malloshub.com using HTTPS and verifies the server's SSL/TLS certificate against the CA certificates found in the specified directory.
+
 
 ```
  -E, --cert <certificate[:password]> Client certificate file and password
@@ -176,7 +198,6 @@ curl --crlfile crl.pem https://www.malloshub.com
 * This command specifies the file crl.pem containing certificate revocation lists when connecting to https://www.malloshub.com.
 
 
-
 ```
  -d, --data <data>   HTTP POST data
      --data-ascii <data> HTTP POST ASCII data
@@ -220,8 +241,8 @@ curl --data-urlencode "param1=value 1" http://www.malloshub.com/endpoint
 ### --delegation <LEVEL>: Set the delegation level.
 ```
 curl --delegation always https://www.malloshub.com
-This command sets the delegation level to "always" when making a request to https://www.malloshub.com.
 ```
+* This command sets the delegation level to "always" when making a request to https://www.malloshub.com.
 
 ### --digest: Use HTTP Digest authentication.
 ```
@@ -265,6 +286,59 @@ curl --disable-epsv ftp://www.malloshub.com/file.txt
 ```
 curl --disallow-username-in
 ```
+### --dns-interface <interface>: Specify the network interface to use for DNS resolution.
+```
+curl --dns-interface eth0 http://www.malloshub.com
+```
+* This command specifies the network interface eth0 for DNS resolution when making a request to http://www.malloshub.com.
+
+### --dns-ipv4-addr <address>: Specify the IPv4 address to use for DNS resolution.
+```
+curl --dns-ipv4-addr 8.8.8.8 http://www.malloshub.com
+```
+* This command specifies the IPv4 address 8.8.8.8 for DNS resolution when making a request to http://www.malloshub.com.
+
+### --dns-ipv6-addr <address>: Specify the IPv6 address to use for DNS resolution.
+```
+curl --dns-ipv6-addr 2001:4860:4860::8888 http://www.malloshub.com
+```
+* This command specifies the IPv6 address 2001:4860:4860::8888 for DNS resolution when making a request to http://www.malloshub.com.
+
+### --dns-servers <addresses>: Specify a comma-separated list of DNS server addresses to use for resolution.
+```
+curl --dns-servers 8.8.8.8,8.8.4.4 http://www.malloshub.com
+```
+* This command specifies the DNS server addresses 8.8.8.8 and 8.8.4.4 for resolution when making a request to http://www.malloshub.com.
+
+### --doh-url <URL>: Use DNS over HTTPS (DoH) with the specified DoH server URL.
+```
+curl --doh-url https://dns.example.com https://www.malloshub.com
+```
+* This command makes a request to https://www.malloshub.com using DNS over HTTPS (DoH) with the specified DoH server URL https://dns.example.com.
+
+### -D, --dump-header <filename>: Write the response headers to a file.
+```
+curl -D headers.txt http://www.malloshub.com
+```
+* This command sends a request to http://www.malloshub.com and writes the response headers to the file headers.txt.
+
+### --egd-file <file>: Specify the path to the EGD (Entropy Gathering Daemon) socket file.
+```
+curl --egd-file /dev/random http://www.malloshub.com
+```
+* This command specifies the EGD socket file /dev/random for generating entropy when making a request to http://www.malloshub.com.
+
+### --engine <name>: Specify the SSL crypto engine to use.
+```
+curl --engine pkcs11 https://www.malloshub.com
+```
+* This command specifies the SSL crypto engine pkcs11 when making a request to https://www.malloshub.com.
+
+### --etag-save <file>: Save the ETag value to a file.
+```
+curl --etag-save etag.txt http://www.malloshub.com/file.txt
+```
+* This command retrieves the ETag value from the server when accessing http://www.malloshub.com/file.txt and saves it to the file etag.txt.
 
 
 
