@@ -1,4 +1,4 @@
-### Usage: curl [options...] <url>
+### Usage: curl \[options\] url
 ### Let assume <url> to be www.malloshub.com:
 
 ```
