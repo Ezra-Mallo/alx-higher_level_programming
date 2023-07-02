@@ -8,7 +8,7 @@
 
 # Resources read or watch:
 
-* [HOWTO Fetch Internet Resources Using urllib Package](https://intranet.alxswe.com/rltoken/KoRrs5dVWsb-B82e-M1TQQ)
-* [Quickstart with Requests package](https://intranet.alxswe.com/rltoken/OGcRGPr7TSWtzypDd0ZibQ)
-* [Requests package](https://intranet.alxswe.com/rltoken/dUNaNQrV2bMSstILitQbXQ)
+* [How to Fetch Internet Resources Using urllib Package](https://docs.python.org/3/howto/urllib2.html)
+* [Quickstart with Requests package](https://requests.readthedocs.io/en/latest/)
+* [Requests package](https://pypi.org/project/requests/)
 
