@@ -1,4 +1,5 @@
 |Module in urllib.request|Module in urllib.parse|Module in urllib.error|
+|--------------------------|--------------------------|
 |AbstractBasicAuthHandler|DefragResult|ContentTooShortError|
 |AbstractDigestAuthHandler|DefragResultBytes|HTTPError|
 |AbstractHTTPHandler|MAX_CACHE_SIZE|URLError|
