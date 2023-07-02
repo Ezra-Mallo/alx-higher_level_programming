@@ -12,3 +12,6 @@
 * [Quickstart with Requests package](https://requests.readthedocs.io/en/latest/)
 * [Requests package](https://pypi.org/project/requests/)
 
+* [urllib3](https://urllib3.readthedocs.io/en/stable/)
+* [urllib3](chrome-extension://efaidnbmnnnibpcajpcgliclefindmkaj/https://urllib3.readthedocs.io/_/downloads/en/1.23/pdf/)
+* [urllib3](https://pypi.org/project/urllib3/)
