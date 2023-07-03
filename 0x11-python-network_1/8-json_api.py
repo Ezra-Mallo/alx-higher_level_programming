@@ -6,9 +6,8 @@ http://0.0.0.0:5000/search_user with the letter as a parameter.
 import requests
 from sys import argv
 
-
 if __name__ == "__main__":
-    url = 'http://0.0.0.0:5000/search_user'
+    url = "http://0.0.0.0:5000/search_user"
     if len(argv) == 0:
         my_letter = ""
     else:
