@@ -5,7 +5,8 @@ if __name__ == "__main__":
     from sys import argv
     from requests import get
 
-    url = f'https://api.github.com/repos/{argv[2]}/{argv[1]}/commits'
+    url = ('https://api.github.com/repos/{}/{}/commits'.
+           format(argv[2], argv[1]))
 
     res = get(url)
     commits = res.json()
