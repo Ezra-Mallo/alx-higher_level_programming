@@ -14,5 +14,12 @@
 * [url_dot_request](https://github.com/Ezra-Mallo/alx-higher_level_programming/blob/main/0x11-python-network_1/url_dot_requiest.md)
 
 * [urllib3](https://urllib3.readthedocs.io/en/stable/)
-* [urllib3](chrome-extension://efaidnbmnnnibpcajpcgliclefindmkaj/https://urllib3.readthedocs.io/_/downloads/en/1.23/pdf/)
 * [urllib3](https://pypi.org/project/urllib3/)
+
+* [GitHub REST API](https://docs.github.com/en/rest/users?apiVersion=2022-11-28)
+
+* [GitHub REST API documentation](https://docs.github.com/en/rest?apiVersion=2022-11-28)
+* [Authenticating to the REST API](https://docs.github.com/en/rest/overview/authenticating-to-the-rest-api?apiVersion=2022-11-28)
+* [Managing your personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+
+

@@ -1,6 +1,11 @@
 #!/usr/bin/python3
-"""Script that takes in a URL, sends a request to the URL and displays the
-body of the response (decoded in utf-8)."""
+"""Write a Python script that fetches https://alx-intranet.hbtn.io/status
+
+    *	You must use the package requests
+    *	You are not allow to import packages other than requests
+    *	The body of the response must be display like the following example
+	(tabulation before -)
+"""
 
 import requests
 
