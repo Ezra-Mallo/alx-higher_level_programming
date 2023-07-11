@@ -22,4 +22,9 @@
 * [Authenticating to the REST API](https://docs.github.com/en/rest/overview/authenticating-to-the-rest-api?apiVersion=2022-11-28)
 * [Managing your personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
+* [play with these api](https://towardsdatascience.com/5-free-and-fun-apis-to-use-for-learning-personal-projects-and-more-1cb37b0d3685)
+* [play with these api](https://github.com/afuh/rick-and-morty-api)
+* [play with these api](https://github.com/curiousrohan/ramapi)
+* [play with these api](https://rickandmortyapi.com)
+* [play with these api](https://rickandmortyapi.com/documentation/#rest)
 
